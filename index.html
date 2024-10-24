@@ -4,327 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loot Filter Generator</title>
-    <style>
-        /* Base Styles */
-        body {
-            font-family: Arial, sans-serif;
-            font-size: 11px; /* Reduced by 30% from the default 16px */
-            margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
-        }
+<style>
+    /* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 11px; /* Reduced by 30% from the default 16px */
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
 
-        .container {
-            width: 95%;
-            max-width: 1400px;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            display: grid;
-            grid-template-columns: 1fr 2fr 0.75fr;
-            grid-gap: 10px;
-            min-height: 500px;
-        }
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.75fr;
+    grid-gap: 10px;
+    min-height: 500px;
+}
 
-        h1 {
-            grid-column: span 3;
-            text-align: center;
-            margin-bottom: 15px;
-            font-size: 16px;
-        }
-        /* Styles for organizing items into three columns */
-        .tier-columns {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;  /* Three equal columns */
-            gap: 15px;  /* Add more space between columns */
-        }
-        /* Styling for selected items in two rows (grid) */
-        .selected-items {
-            display: grid;
-            grid-template-columns: 1fr 1fr;  /* Two equal-width columns */
-            gap: 5px;  /* Add space between rows and columns */
-            margin-top: 10px;
-        }
+h1 {
+    grid-column: span 3;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
 
-        .selected-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 11px;  /* Match font size of the item list */
-            padding: 5px;
-            background-color: #f9f9f9;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
+/* Sockets and Tiers Styles */
+#sockets-section, #tiers-section {
+    margin-top: 10px;  /* Space above the sections */
+}
 
-        .remove-item {
-            color: red;
-            cursor: pointer;
-            margin-left: 10px;
-            font-size: 12px;  /* Slightly larger for visibility */
-        }
+.tier-entry {
+    display: flex;  /* Use flexbox to align items */
+    align-items: center;  /* Center vertically */
+    margin-bottom: 5px;  /* Space between tier entries */
+}
 
-        .remove-item:hover {
-            color: darkred;  /* Make it more visible on hover */
-        }
-        .tier-column {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        .item-list {
-            margin-top: 10px;
-            padding: 10px;
-        }
-        .tier-column h4 {
-            margin-bottom: 5px;
-            font-weight: bold;
-            font-size: 12px;
-        }
+.tier-entry label {
+    margin-left: 5px; /* Space between checkbox and label */
+}
 
-        .tier-column label {
-            margin-bottom: 3px;  /* Reduce vertical space between checkboxes */
-            display: flex;
-            align-items: center;
-            font-size: 11px;  /* Reduce font size slightly */
-        }
+/* Style for the grid headers (Tick and Cross) */
+.grid-header {
+    display: flex;  /* Use flexbox for the header */
+    justify-content: flex-start;  /* Align tick and cross headers to the start */
+    margin-bottom: 5px;  /* Space below the header */
+    font-weight: bold; /* Make the header bold */
+}
+.rarity-basics-container {
+    display: flex;
+    justify-content: space-between; /* Spacing between sections */
+}
 
-        .tier-column input[type="checkbox"] {
-            margin-right: 5px;  /* Add space between the checkbox and label */
-        }
-        /* Collapsible Box Styles */
-        .collapsible-box {
-            border: 1px solid #ccc;
-            padding: 0;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-            overflow: hidden;
-            transition: height 0.3s ease-in-out;
-            font-size: 12px; /* Reduce font size for headers */
-            padding: 6px; /* Adjust padding to match smaller font */
-        }
-        
+.basics-container, .rarity-container {
+    width: 48%; /* Give each section enough width to fit */
+}
+/* Align the ticks and crosses neatly */
+.true-header, .false-header {
+    width: 20px; /* Fixed width for alignment */
+    text-align: center; /* Center text */
+    margin-right: 5px; /* Space between headers */
+}
 
-        .collapsible-box h2 {
-            font-size: 12px;
-            margin: 0;
-            cursor: pointer;
-            background-color: #2980b9;
-            color: white;
-            padding: 6px;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-        }
+/* Align tick and cross indicators above their respective checkboxes */
+.tier-entry {
+    display: flex;  /* Use flexbox for each entry */
+    align-items: center;  /* Center vertically */
+    margin-bottom: 5px;  /* Space between tier entries */
+}
 
-        .collapsible-box h2:hover {
-            background-color: #1f6395;
-        }
+.tier-entry label {
+    margin-left: 5px; /* Space between checkbox and label */
+}
 
-        .collapsible-content {
-            padding: 20px;
-            display: none;
-            background-color: #fff;
-            transition: max-height 0.3s ease-in-out;
-        }
+/* Sockets Section */
+.sockets-section {
+    margin-bottom: 15px;  /* Space below the sockets section */
+}
 
-        /* Dropdowns Side-by-Side */
-        .dropdowns {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-        button {
-            margin-top: 10px;
-            padding: 5px;
-            width: 100%;
-            font-size: 11px;
-        }
+.sockets-section label {
+    margin-right: 10px; /* Space between labels */
+}
 
-        .dropdowns select {
-            width: 48%;  /* Make the dropdowns a bit wider */
-            padding: 3px;  /* Add some padding */
-            font-size: 11px;  /* Reduce font size */
-        }
+/* Collapsible Box Styles */
+.collapsible-box {
+    border: 1px solid #ccc;
+    padding: 0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+}
 
-        /* Collapsed box behavior */
-        .collapsible-box.collapsed {
-            height: auto;
-        }
+.collapsible-box h2 {
+    font-size: 12px;
+    margin: 0;
+    cursor: pointer;
+    background-color: #2980b9;
+    color: white;
+    padding: 6px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
 
-        .collapsible-box.collapsed h2 {
-            margin-bottom: 0;
-        }
+.collapsible-box h2:hover {
+    background-color: #1f6395;
+}
 
-        .collapsible-content.show {
-            display: block;
-        }
+.collapsible-content {
+    padding: 10px;
+    display: none; /* Hide content by default */
+}
 
-        /* Left Column (2 boxes) */
-        .left-column {
-            display: grid;
-            grid-template-rows: 1fr 1fr;
-            grid-gap: 10px;
-        }
+/* Make the collapsible content visible when active */
+.collapsible-box.active .collapsible-content {
+    display: block;
+}
 
-        /* Middle Column (4 boxes, two rows, two columns) */
-        .middle-column {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 10px;
-        }
+/* Generated Rule Box at the Bottom */
+/* Ensure the rule box takes full width */
+.rule-box {
+    grid-column: 1 / -1; /* This will make the box span all columns */
+    margin-top: 20px;
+    border: 1px solid #2980b9;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    color: #2980b9;
+    width: calc(100% - 20px); /* Adjust for padding or margins */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
 
-        /* Right Column (1 vertical box) */
-        .right-column {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            border: 1px solid #ccc;
-            padding: 10px;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-            min-height: 300px;
-        }
-
-        /* Generated Rule Box at the Bottom */
-        .rule-box {
-            grid-column: span 3;
-            margin-top: 20px;
-            border: 1px solid #2980b9;
-            padding: 10px;
-            border-radius: 5px;
-            text-align: center;
-            font-size: 12px;
-            color: #2980b9;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 1024px) {
-            .container {
-                grid-template-columns: 1fr;
-            }
-
-            .middle-column {
-                grid-template-columns: 1fr;
-            }
-
-            .right-column {
-                border: none;
-                box-shadow: none;
-            }
-
-            .rule-box {
-                margin-top: 15px;
-                font-size: 11px;
-            }
-
-            }
-                /* Main rarity container to hold everything neatly */
-            /* Main rarity container to hold everything neatly */
-            .rarity-container {
-                margin-bottom: 15px;
-            }
-
-            /* Grid layout for each rarity's TRUE/FALSE checkboxes and labels */
-            .rarity-entry {
-                display: grid;
-                grid-template-columns: 20px 20px auto; /* Compacting the space between checkboxes and label */
-                grid-gap: 5px; /* Reduced gap between grid items */
-                align-items: center;
-                margin-bottom: 5px; /* Reduced margin between rarity entries */
-            }
-
-            /* Headers for TRUE and FALSE */
-            .rarity-grid-header {
-                display: grid;
-                grid-template-columns: 20px 20px auto; /* Compact header alignment */
-                grid-gap: 5px;
-                margin-bottom: 5px; /* Reduced spacing above checkboxes */
-                font-weight: bold;
-            }
-
-            /* Small styling for the TRUE/FALSE headers */
-            .true-header {
-                color: green;
-                text-align: center;
-            }
-
-            .false-header {
-                color: red;
-                text-align: center;
-            }
-
-            /* Neat spacing between checkboxes */
-            .rarity-entry label {
-                margin-left: 5px;
-            }
-                        
-             /* Same styling as before for compact layout */
-            .entry {
-                display: grid;
-                grid-template-columns: 20px 20px auto;
-                grid-gap: 5px;
-                align-items: center;
-                margin-bottom: 5px;
-            }
-
-            /* Grid headers for TRUE and FALSE */
-            .grid-header {
-                display: grid;
-                grid-template-columns: 20px 20px auto;
-                grid-gap: 5px;
-                margin-bottom: 5px;
-                font-weight: bold;
-            }
-
-            .true-header {
-                color: green;
-                text-align: center;
-            }
-
-            .false-header {
-                color: red;
-                text-align: center;
-            }
-            /* Flexbox for Rarity and Basics to display side by side */
-            .rarity-basics-container {
-                display: flex;
-                justify-content: space-between; /* Spacing between sections */
-                gap: 20px; /* Add some space between the two sections */
-            }
-
-            .rarity-container, .basics-container {
-                width: 50%; /* Give each section 50% of the available width */
-            }
-
-            .grid-header {
-                display: grid;
-                grid-template-columns: 20px 20px auto; /* Columns for the headers */
-                grid-gap: 5px;
-                margin-bottom: 5px;
-                font-weight: bold;
-            }
-
-            .entry {
-                display: grid;
-                grid-template-columns: 20px 20px auto;
-                grid-gap: 5px;
-                align-items: center;
-                margin-bottom: 5px;
-            }
-
-            .true-header {
-                color: green;
-                text-align: center;
-            }
-
-            .false-header {
-                color: red;
-                text-align: center;
-            }
-    </style>
+</style>
 </head>
 
 <body>
@@ -360,41 +178,104 @@
             </div>
 
             <div class="collapsible-box collapsed">
-                <h2>Rarity Selection</h2>
+                <h2>Sockets and Tiers</h2>
                 <div class="collapsible-content">
-                    <p>Select rarities to filter.</p>
+                    <!-- Sockets Section -->
+                    <div id="sockets-section">
+                        <h3>Sockets</h3>
+                        <!-- Modifiers for < > = -->
+                        <label><input type="radio" name="socket-modifier" value="<"> < </label>
+                        <label><input type="radio" name="socket-modifier" value="=" checked> = </label>
+                        <label><input type="radio" name="socket-modifier" value=">"> > </label>
+            
+                        <!-- Socket numbers -->
+                        <div id="socket-numbers">
+                            <label><input type="checkbox" name="sockets" value="0"> 0</label>
+                            <label><input type="checkbox" name="sockets" value="1"> 1</label>
+                            <label><input type="checkbox" name="sockets" value="2"> 2</label>
+                            <label><input type="checkbox" name="sockets" value="3"> 3</label>
+                            <label><input type="checkbox" name="sockets" value="4"> 4</label>
+                            <label><input type="checkbox" name="sockets" value="5"> 5</label>
+                            <label><input type="checkbox" name="sockets" value="6"> 6</label>
+                        </div>
+                    </div>
+            
+                    <div id="tiers-section">
+                        <h3>Tiers</h3>
+                        <div class="entry">
+                            <!-- Headers for Tick and Cross -->
+                            <div class="grid-header">
+                                <div class="true-header">✓</div>
+                                <div class="false-header">✗</div>
+                            </div>
+                    
+                            <!-- Normal Tier -->
+                            <div class="tier-entry">
+                                <label>
+                                    <input type="checkbox" name="tier-true" value="NORM"> 
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="tier-false" value="!NORM"> Normal
+                                </label>
+                            </div>
+                    
+                            <!-- Exceptional Tier -->
+                            <div class="tier-entry">
+                                <label>
+                                    <input type="checkbox" name="tier-true" value="EXC"> 
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="tier-false" value="!EXC"> Exceptional
+                                </label>
+                            </div>
+                    
+                            <!-- Elite Tier -->
+                            <div class="tier-entry">
+                                <label>
+                                    <input type="checkbox" name="tier-true" value="ELT"> 
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="tier-false" value="!ELT"> Elite
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
+            
+            
+            
+            
         </div>
 
         <!-- Middle Column (4 boxes) -->
         <div class="middle-column">
             <div class="collapsible-box collapsed">
-                <h2>Basics and Rarity</h2>
-                <div class="collapsible-content">
-                    <div>
-                        <h3>Select Rarity</h3>
-                        <div class="rarity-basics-container">
-                            <!-- Rarity Section -->
-                            <div class="rarity-container">
-                                <div class="grid-header">
-                                    <div class="true-header">✓</div>
-                                    <div class="false-header">✗</div>
-                                </div>
-                        
-                                <!-- Rarity entries (checkboxes and labels) -->
-                                <div id="rarity-selection"></div>
-                            </div>
-                        
-                            <!-- Basics Section -->
+                <div class="collapsible-box collapsed">
+                    <h2>Basics and Rarity</h2>
+                    <div class="collapsible-content">
+                        <div>
+                            <h3>Basics</h3>
                             <div class="basics-container">
                                 <div class="grid-header">
                                     <div class="true-header">✓</div>
                                     <div class="false-header">✗</div>
                                 </div>
-                        
+                
                                 <!-- Basics entries (checkboxes and labels) -->
                                 <div id="basics-selection"></div>
+                            </div>
+                
+                            <h3>Select Rarity</h3>
+                            <div class="rarity-container">
+                                <div class="grid-header">
+                                    <div class="true-header">✓</div>
+                                    <div class="false-header">✗</div>
+                                </div>
+                
+                                <!-- Rarity entries (checkboxes and labels) -->
+                                <div id="rarity-selection"></div>
                             </div>
                         </div>
                     </div>
@@ -465,6 +346,7 @@
         
             <!-- Section for displaying selected items -->
             <div id="selected-items" class="selected-items">
+                <h3>Selected Items:</h3>   
                 <!-- Selected items will be added here -->
             </div>
         
@@ -478,10 +360,10 @@
         <!-- Generated Rule Box -->
         <div class="rule-box">
 <!-- Generated Rule Section -->
-            <div class="rule-box">
-                <h2>Generated Rule:</h2>
-                <textarea id="generated-rule" class="generated-rule-textbox" rows="3" readonly></textarea>
-            </div>
+        <div class="rule-box">
+            <h2>Generated Rule:</h2>
+            <textarea id="generated-rule" class="generated-rule-textbox" rows="3" readonly></textarea>
+        </div>
         </div>
     </div>
 
@@ -701,10 +583,16 @@
         rule += selectedRarities[0];
     }
 
-    // Add basics if selected
-    if (selectedBasics.length > 0) {
-        if (selectedRarities.length > 0) rule += " ";  // Add space between rarity and basics
-        rule += selectedBasics.join(" ");
+    // Add sockets if selected
+    if (selectedSockets.length > 0) {
+        if (rule !== "ItemDisplay[") rule += " "; // Add space if there is already something in the rule
+        rule += "(" + selectedSockets.join(" OR ") + ")";
+    }
+
+    // Add tiers if selected
+    if (selectedTiers.length > 0) {
+        if (rule !== "ItemDisplay[") rule += " "; // Add space if there is already something in the rule
+        rule += "(" + selectedTiers.join(" OR ") + ")";
     }
 
     // Add item codes (assuming item selection is already working)
@@ -714,14 +602,11 @@
         rule += " " + selectedItems[0].ItemCode;
     }
 
-    // Add selected skills to the rule
+    // Add selected skills to the rule (if skills are enabled)
     if (selectedSkills.length > 0) {
-        if (rule !== "ItemDisplay[") rule += " ";  // Add space if there's something before skills
+        if (rule !== "ItemDisplay[") rule += " "; // Add space if there is already something in the rule
+        const selectedLogic = document.querySelector('input[name="and-or"]:checked').value; // AND/OR logic
 
-        // Fetch the selected logic (AND/OR) using the correct radio button name
-        const selectedLogic = document.querySelector('input[name="and-or"]:checked').value;
-
-        // Apply AND/OR logic between multiple skills
         if (selectedSkills.length > 1) {
             rule += "(" + selectedSkills.map(skill => `${skill.code}${skill.comparison}${skill.level}`).join(` ${selectedLogic} `) + ")";
         } else {
@@ -734,7 +619,6 @@
     // Update the rule box with the generated rule
     ruleBox.value = rule;
 }
-
 
 </script>
 <script>
@@ -899,47 +783,6 @@
     }
 
     // Function to generate the rule based on the selected rarities, basics, items, and skills
-    function updateGeneratedRule() {
-        const ruleBox = document.getElementById('generated-rule');
-        let rule = "ItemDisplay[";
-
-        // Add rarities if selected
-        if (selectedRarities.length > 1) {
-            rule += "(" + selectedRarities.join(" OR ") + ")";
-        } else if (selectedRarities.length === 1) {
-            rule += selectedRarities[0];
-        }
-
-        // Add basics if selected
-        if (selectedBasics.length > 0) {
-            if (selectedRarities.length > 0) rule += " ";  // Add space between rarity and basics
-            rule += selectedBasics.join(" ");
-        }
-
-        // Add item codes
-        if (selectedItems.length > 1) {
-            rule += " (" + selectedItems.map(item => item.ItemCode).join(" OR ") + ")";
-        } else if (selectedItems.length === 1) {
-            rule += " " + selectedItems[0].ItemCode;
-        }
-
-        // Add selected skills to the rule
-        if (selectedSkills.length > 0) {
-            if (rule !== "ItemDisplay[") rule += " ";  // Add space if there's something before skills
-
-            // Apply AND/OR logic between multiple skills
-            if (selectedSkills.length > 1) {
-                rule += "(" + selectedSkills.map(skill => `${skill.code}${skill.comparison}${skill.level}`).join(` ${selectedLogic} `) + ")";
-            } else {
-                rule += `${selectedSkills[0].code}${selectedSkills[0].comparison}${selectedSkills[0].level}`;
-            }
-        }
-
-        rule += "]:";
-
-        // Update the rule box with the generated rule
-        ruleBox.value = rule;
-    }
 
 
 
@@ -1147,6 +990,128 @@ fetch('data/skills.json')
 
 </script>
 
+<script>
+
+    // Arrays to store selected sockets and tiers
+let selectedSockets = [];
+let selectedTiers = [];
+
+// Event listener for socket number checkboxes
+document.querySelectorAll('input[name="sockets"]').forEach(checkbox => {
+    checkbox.addEventListener('change', function () {
+        updateSelectedSockets();
+    });
+});
+
+// Event listener for socket modifiers (radio buttons)
+document.querySelectorAll('input[name="socket-modifier"]').forEach(radio => {
+    radio.addEventListener('change', function () {
+        updateSelectedSockets();
+    });
+});
+
+// Event listener for tier checkboxes (true and false checkboxes)
+document.querySelectorAll('input[name="tier-true"], input[name="tier-false"]').forEach(checkbox => {
+    checkbox.addEventListener('change', function () {
+        updateSelectedTiers();
+    });
+});
+
+// Function to update selected sockets
+function updateSelectedSockets() {
+    const selectedModifier = document.querySelector('input[name="socket-modifier"]:checked').value;
+    const selectedSocketNumbers = [...document.querySelectorAll('input[name="sockets"]:checked')].map(sock => sock.value);
+
+    selectedSockets = []; // Clear current selection
+
+    if (selectedSocketNumbers.length > 0) {
+        selectedSocketNumbers.forEach(socketNumber => {
+            selectedSockets.push(`SOCKETS${selectedModifier}${socketNumber}`);
+        });
+    }
+
+    // Update the rule after changing sockets
+    updateGeneratedRule();
+}
+
+// Function to update selected tiers
+// Event listener for tier checkboxes (true and false checkboxes)
+
+
+// Function to update selected tiers
+function updateSelectedTiers() {
+    selectedTiers = []; // Clear the selectedTiers array
+
+    // Collect true and false tier selections
+    const trueTiers = [...document.querySelectorAll('input[name="tier-true"]:checked')].map(tier => tier.value);
+    const falseTiers = [...document.querySelectorAll('input[name="tier-false"]:checked')].map(tier => tier.value);
+
+    // Combine the selected true and false tiers
+    selectedTiers = [...trueTiers, ...falseTiers];
+
+    console.log('Selected Tiers:', selectedTiers); // Debugging: check if the tiers are selected correctly
+
+    // Update rule generation with selected tiers
+    updateGeneratedRule();
+}
+// Function to generate the rule based on selected sockets, tiers, rarities, etc.
+function updateGeneratedRule() {
+    const ruleBox = document.getElementById('generated-rule');
+    let rule = "ItemDisplay[";
+
+    // Add rarities if selected
+    if (selectedRarities.length > 1) {
+        rule += "(" + selectedRarities.join(" OR ") + ")";
+    } else if (selectedRarities.length === 1) {
+        rule += selectedRarities[0];
+    }
+
+    // Add sockets if selected
+    if (selectedSockets.length > 0) {
+        if (rule !== "ItemDisplay[") rule += " "; // Add space if there is already something in the rule
+        rule += "(" + selectedSockets.join(" OR ") + ")";
+    }
+    // Add basics if selected
+    if (selectedBasics.length > 0) {
+        if (selectedRarities.length > 0) rule += " ";
+        rule += selectedBasics.join(" ");
+    }
+
+    // Add tiers if selected
+    if (selectedTiers.length > 0) {
+        if (rule !== "ItemDisplay[") rule += " "; // Add space if there is already something in the rule
+        rule += "(" + selectedTiers.join(" OR ") + ")";
+    }
+
+    // Add item codes (assuming item selection is already working)
+    if (selectedItems.length > 1) {
+        rule += " (" + selectedItems.map(item => item.ItemCode).join(" OR ") + ")";
+    } else if (selectedItems.length === 1) {
+        rule += " " + selectedItems[0].ItemCode;
+    }
+
+    // Add selected skills to the rule (if skills are enabled)
+    if (selectedSkills.length > 0) {
+        if (rule !== "ItemDisplay[") rule += " "; // Add space if there is already something in the rule
+        const selectedLogic = document.querySelector('input[name="and-or"]:checked').value; // AND/OR logic
+
+        if (selectedSkills.length > 1) {
+            rule += "(" + selectedSkills.map(skill => `${skill.code}${skill.comparison}${skill.level}`).join(` ${selectedLogic} `) + ")";
+        } else {
+            rule += selectedSkills[0].code + selectedSkills[0].comparison + selectedSkills[0].level;
+        }
+    }
+
+    rule += "]:";
+
+    // Log the rule to ensure it's being generated correctly
+    console.log('Generated Rule:', rule);
+
+    // Update the rule box with the generated rule
+    ruleBox.value = rule;
+}
+
+</script>
 
 </body>
 </html>
