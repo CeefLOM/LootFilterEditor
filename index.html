@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loot Filter Generator</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 11px; /* Reduced by 30% from the default 16px */
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 1400px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: 1fr 2fr 0.75fr;
+            grid-gap: 10px;
+            min-height: 500px;
+        }
+
+        h1 {
+            grid-column: span 3;
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        /* Styles for organizing items into three columns */
+        .tier-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;  /* Three equal columns */
+            gap: 15px;  /* Add more space between columns */
+        }
+        /* Styling for selected items in two rows (grid) */
+        .selected-items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;  /* Two equal-width columns */
+            gap: 5px;  /* Add space between rows and columns */
+            margin-top: 10px;
+        }
+
+        .selected-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 11px;  /* Match font size of the item list */
+            padding: 5px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .remove-item {
+            color: red;
+            cursor: pointer;
+            margin-left: 10px;
+            font-size: 12px;  /* Slightly larger for visibility */
+        }
+
+        .remove-item:hover {
+            color: darkred;  /* Make it more visible on hover */
+        }
+        .tier-column {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .item-list {
+            margin-top: 10px;
+            padding: 10px;
+        }
+        .tier-column h4 {
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .tier-column label {
+            margin-bottom: 3px;  /* Reduce vertical space between checkboxes */
+            display: flex;
+            align-items: center;
+            font-size: 11px;  /* Reduce font size slightly */
+        }
+
+        .tier-column input[type="checkbox"] {
+            margin-right: 5px;  /* Add space between the checkbox and label */
+        }
+        /* Collapsible Box Styles */
+        .collapsible-box {
+            border: 1px solid #ccc;
+            padding: 0;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            overflow: hidden;
+            transition: height 0.3s ease-in-out;
+            font-size: 12px; /* Reduce font size for headers */
+            padding: 6px; /* Adjust padding to match smaller font */
+        }
+        
+
+        .collapsible-box h2 {
+            font-size: 12px;
+            margin: 0;
+            cursor: pointer;
+            background-color: #2980b9;
+            color: white;
+            padding: 6px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .collapsible-box h2:hover {
+            background-color: #1f6395;
+        }
+
+        .collapsible-content {
+            padding: 20px;
+            display: none;
+            background-color: #fff;
+            transition: max-height 0.3s ease-in-out;
+        }
+
+        /* Dropdowns Side-by-Side */
+        .dropdowns {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 5px;
+            width: 100%;
+            font-size: 11px;
+        }
+
+        .dropdowns select {
+            width: 48%;  /* Make the dropdowns a bit wider */
+            padding: 3px;  /* Add some padding */
+            font-size: 11px;  /* Reduce font size */
+        }
+
+        /* Collapsed box behavior */
+        .collapsible-box.collapsed {
+            height: auto;
+        }
+
+        .collapsible-box.collapsed h2 {
+            margin-bottom: 0;
+        }
+
+        .collapsible-content.show {
+            display: block;
+        }
+
+        /* Left Column (2 boxes) */
+        .left-column {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 10px;
+        }
+
+        /* Middle Column (4 boxes, two rows, two columns) */
+        .middle-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+        }
+
+        /* Right Column (1 vertical box) */
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            min-height: 300px;
+        }
+
+        /* Generated Rule Box at the Bottom */
+        .rule-box {
+            grid-column: span 3;
+            margin-top: 20px;
+            border: 1px solid #2980b9;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 12px;
+            color: #2980b9;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 1024px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .middle-column {
+                grid-template-columns: 1fr;
+            }
+
+            .right-column {
+                border: none;
+                box-shadow: none;
+            }
+
+            .rule-box {
+                margin-top: 15px;
+                font-size: 11px;
+            }
+
+            }
+                /* Main rarity container to hold everything neatly */
+            /* Main rarity container to hold everything neatly */
+            .rarity-container {
+                margin-bottom: 15px;
+            }
+
+            /* Grid layout for each rarity's TRUE/FALSE checkboxes and labels */
+            .rarity-entry {
+                display: grid;
+                grid-template-columns: 20px 20px auto; /* Compacting the space between checkboxes and label */
+                grid-gap: 5px; /* Reduced gap between grid items */
+                align-items: center;
+                margin-bottom: 5px; /* Reduced margin between rarity entries */
+            }
+
+            /* Headers for TRUE and FALSE */
+            .rarity-grid-header {
+                display: grid;
+                grid-template-columns: 20px 20px auto; /* Compact header alignment */
+                grid-gap: 5px;
+                margin-bottom: 5px; /* Reduced spacing above checkboxes */
+                font-weight: bold;
+            }
+
+            /* Small styling for the TRUE/FALSE headers */
+            .true-header {
+                color: green;
+                text-align: center;
+            }
+
+            .false-header {
+                color: red;
+                text-align: center;
+            }
+
+            /* Neat spacing between checkboxes */
+            .rarity-entry label {
+                margin-left: 5px;
+            }
+                        
+             /* Same styling as before for compact layout */
+            .entry {
+                display: grid;
+                grid-template-columns: 20px 20px auto;
+                grid-gap: 5px;
+                align-items: center;
+                margin-bottom: 5px;
+            }
+
+            /* Grid headers for TRUE and FALSE */
+            .grid-header {
+                display: grid;
+                grid-template-columns: 20px 20px auto;
+                grid-gap: 5px;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+
+            .true-header {
+                color: green;
+                text-align: center;
+            }
+
+            .false-header {
+                color: red;
+                text-align: center;
+            }
+            /* Flexbox for Rarity and Basics to display side by side */
+            .rarity-basics-container {
+                display: flex;
+                justify-content: space-between; /* Spacing between sections */
+                gap: 20px; /* Add some space between the two sections */
+            }
+
+            .rarity-container, .basics-container {
+                width: 50%; /* Give each section 50% of the available width */
+            }
+
+            .grid-header {
+                display: grid;
+                grid-template-columns: 20px 20px auto; /* Columns for the headers */
+                grid-gap: 5px;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+
+            .entry {
+                display: grid;
+                grid-template-columns: 20px 20px auto;
+                grid-gap: 5px;
+                align-items: center;
+                margin-bottom: 5px;
+            }
+
+            .true-header {
+                color: green;
+                text-align: center;
+            }
+
+            .false-header {
+                color: red;
+                text-align: center;
+            }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Loot Filter Generator</h1>
+
+        <!-- Left Column (2 boxes) -->
+        <div class="left-column">
+            <div class="collapsible-box collapsed">
+                <h2>Item Selection</h2>
+                <div class="collapsible-content">
+                    <div class="dropdowns">
+                        <!-- Category Dropdown -->
+                        <select id="category" name="category">
+                            <option value="">-- Choose Category --</option>
+                        </select>
+                
+                        <!-- Subcategory Dropdown -->
+                        <select id="subcategory" name="subcategory">
+                            <option value="">-- Choose Subcategory --</option>
+                        </select>
+                    </div>
+
+                    <!-- Items Selection (Populated based on subcategory) -->
+                    <div class="item-list" id="item-list">
+                        <!-- Items checkboxes will be populated here -->
+                    </div>
+
+                    <button id="add-items-button" type="button" style="width: 100%;">Add Items</button>
+
+                </div>
+            </div>
+
+            <div class="collapsible-box collapsed">
+                <h2>Rarity Selection</h2>
+                <div class="collapsible-content">
+                    <p>Select rarities to filter.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Middle Column (4 boxes) -->
+        <div class="middle-column">
+            <div class="collapsible-box collapsed">
+                <h2>Basics and Rarity</h2>
+                <div class="collapsible-content">
+                    <div>
+                        <h3>Select Rarity</h3>
+                        <div class="rarity-basics-container">
+                            <!-- Rarity Section -->
+                            <div class="rarity-container">
+                                <div class="grid-header">
+                                    <div class="true-header">✓</div>
+                                    <div class="false-header">✗</div>
+                                </div>
+                        
+                                <!-- Rarity entries (checkboxes and labels) -->
+                                <div id="rarity-selection"></div>
+                            </div>
+                        
+                            <!-- Basics Section -->
+                            <div class="basics-container">
+                                <div class="grid-header">
+                                    <div class="true-header">✓</div>
+                                    <div class="false-header">✗</div>
+                                </div>
+                        
+                                <!-- Basics entries (checkboxes and labels) -->
+                                <div id="basics-selection"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapsible-box collapsed">
+                <h2>Skill Selection</h2>
+                <div class="collapsible-content">
+                    <p>Select skills to filter by.</p>
+                </div>
+            </div>
+
+            <div class="collapsible-box collapsed">
+                <h2>Color and Style</h2>
+                <div class="collapsible-content">
+                    <p>Customize color and style for items.</p>
+                </div>
+            </div>
+
+            <div class="collapsible-box collapsed">
+                <h2>Advanced Options</h2>
+                <div class="collapsible-content">
+                    <p>Configure advanced settings for filtering.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column (1 thin vertical box) -->
+        <div class="right-column">
+            <h2>Current Settings</h2>
+            <div id="selected-items" class="selected-items">
+                <!-- Selected items will be added here -->
+            </div>
+        </div>
+
+        <!-- Generated Rule Box -->
+        <div class="rule-box">
+<!-- Generated Rule Section -->
+            <div class="rule-box">
+                <h2>Generated Rule:</h2>
+                <textarea id="generated-rule" class="generated-rule-textbox" rows="3" readonly></textarea>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to toggle the collapsible boxes -->
+    <script>
+        const collapsibles = document.querySelectorAll('.collapsible-box h2');
+
+        collapsibles.forEach(header => {
+            header.addEventListener('click', () => {
+                const box = header.parentElement;
+                const content = header.nextElementSibling;
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                    box.classList.add('collapsed');
+                } else {
+                    content.style.display = 'block';
+                    box.classList.remove('collapsed');
+                }
+            });
+        });
+    </script>
+<!-- Item display logic-->
+<script>
+    // Fetch data from itemdb.json located in the "data" folder
+    fetch('data/itemdb.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            console.log("itemdb.json fetched successfully.");
+            return response.json();
+        })
+        .then(itemsData => {
+            const categorySelect = document.getElementById('category');
+            const subcategorySelect = document.getElementById('subcategory');
+            const itemListDiv = document.getElementById('item-list');
+            
+            // Create a Set to store unique categories (corrected for case sensitivity)
+            const uniqueCategories = new Set();
+
+            // Loop through itemdb.json and extract unique categories (fixed key case)
+            itemsData.forEach(item => {
+                if (item.Category) {
+                    uniqueCategories.add(item.Category);  // Ensure only unique categories are added
+                }
+            });
+
+            console.log("Unique categories:", uniqueCategories);
+
+            // Populate the category dropdown
+            uniqueCategories.forEach(category => {
+                const option = document.createElement('option');
+                option.value = category;
+                option.textContent = category;
+                categorySelect.appendChild(option);
+            });
+
+            // Event listener for when a category is selected
+            categorySelect.addEventListener('change', function() {
+                const selectedCategory = this.value;
+                subcategorySelect.innerHTML = '<option value="">-- Choose Subcategory --</option>';  // Reset subcategory
+                
+                // Populate subcategories based on selected category (fixed key case)
+                const subcategories = itemsData.filter(item => item.Category === selectedCategory)
+                                               .map(item => item.SubCategory)
+                                               .filter((value, index, self) => self.indexOf(value) === index);  // Unique subcategories
+                
+                console.log("Subcategories for selected category:", subcategories);
+                
+                subcategories.forEach(subcategory => {
+                    const option = document.createElement('option');
+                    option.value = subcategory;
+                    option.textContent = subcategory;
+                    subcategorySelect.appendChild(option);
+                });
+            });
+
+            // Populate items when a subcategory is selected
+            subcategorySelect.addEventListener('change', function() {
+                const selectedCategory = categorySelect.value;
+                const selectedSubcategory = this.value;
+                itemListDiv.innerHTML = '';  // Reset item list
+
+                // Filter items based on category and subcategory (fixed key case)
+                const items = itemsData.filter(item => item.Category === selectedCategory && item.SubCategory === selectedSubcategory);
+
+                console.log("Items for selected subcategory:", items);
+
+                // Organize items into three categories: Normal, Exceptional, Elite
+                const normalItems = items.filter(item => item.Tier === 'Normal');
+                const exceptionalItems = items.filter(item => item.Tier === 'Exceptional');
+                const eliteItems = items.filter(item => item.Tier === 'Elite');
+
+                // Create a container for the three columns
+                const columnsContainer = document.createElement('div');
+                columnsContainer.className = 'tier-columns'; // Apply grid layout
+
+                // Create tier columns and populate each with its corresponding items
+                const createTierColumn = (tierName, itemsArray) => {
+                    const column = document.createElement('div');
+                    column.className = 'tier-column';
+
+                    const header = document.createElement('h4');
+                    header.textContent = tierName;
+                    column.appendChild(header);
+
+                    itemsArray.forEach(item => {
+                        const label = document.createElement('label');
+                        const checkbox = document.createElement('input');
+                        checkbox.dataset.code = item.ItemCode;  // Store the item code in the data-code attribute
+                        checkbox.type = 'checkbox';
+                        checkbox.name = 'items';
+                        checkbox.value = item.Name;
+                        label.appendChild(checkbox);
+                        label.appendChild(document.createTextNode(item.Name));
+                        column.appendChild(label);
+                    });
+
+                    return column;
+                };
+
+                // Append Normal, Exceptional, Elite columns
+                columnsContainer.appendChild(createTierColumn('Normal', normalItems));
+                columnsContainer.appendChild(createTierColumn('Exceptional', exceptionalItems));
+                columnsContainer.appendChild(createTierColumn('Elite', eliteItems));
+
+                itemListDiv.appendChild(columnsContainer);
+            });
+        })
+        .catch(error => {
+            console.error("Error loading item data:", error);
+        });
+</script>
+<script>
+    // Array to store selected items
+    let selectedItems = [];
+
+    // Sample JSON (replace this with actual fetching logic from itemdb.json)
+    const itemsData = [];
+
+    // Function to display items from JSON as checkboxes
+    function displayItems() {
+        const itemListDiv = document.getElementById('item-list');
+        itemListDiv.innerHTML = '';  // Clear the list before displaying
+
+        itemsData.forEach(item => {
+            const label = document.createElement('label');
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.value = item.Name;
+            checkbox.dataset.code = item.ItemCode;  // Store the item code in the data-code attribute
+            label.appendChild(checkbox);
+            label.appendChild(document.createTextNode(` ${item.Name} (${item.Tier})`));
+            itemListDiv.appendChild(label);
+            itemListDiv.appendChild(document.createElement('br'));  // Line break for neatness
+        });
+    }
+
+    // Call displayItems to show items
+    displayItems();
+
+    // Event listener for the Add Items button
+    document.getElementById('add-items-button').addEventListener('click', function() {
+        const checkedItems = document.querySelectorAll('input[name="items"]:checked');
+        checkedItems.forEach(checkbox => {
+            const itemName = checkbox.value;
+            const itemCode = checkbox.dataset.code;  // Get item code from data-code
+            if (!selectedItems.some(item => item.ItemCode === itemCode)) {
+                selectedItems.push({ Name: itemName, ItemCode: itemCode });
+                displaySelectedItems();
+            }
+        });
+    });
+
+    // Function to display selected items
+    function displaySelectedItems() {
+        const selectedItemsDiv = document.getElementById('selected-items');
+        selectedItemsDiv.innerHTML = '';  // Clear current display
+
+        selectedItems.forEach((item, index) => {
+            const itemDiv = document.createElement('div');
+            itemDiv.className = 'selected-item';
+
+            const itemName = document.createElement('span');
+            itemName.textContent = item.Name;  // Display item name
+
+            const removeButton = document.createElement('span');
+            removeButton.textContent = 'X';
+            removeButton.className = 'remove-item';
+            removeButton.onclick = () => {
+                removeSelectedItem(index);
+            };
+
+            itemDiv.appendChild(itemName);
+            itemDiv.appendChild(removeButton);
+            selectedItemsDiv.appendChild(itemDiv);
+        });
+
+        updateGeneratedRule();  // Update the rule when the items are displayed
+    }
+
+    // Function to remove an item from the list
+    function removeSelectedItem(index) {
+        selectedItems.splice(index, 1);  // Remove the item from the array
+        displaySelectedItems();  // Update the display after removal
+    }
+
+    // Function to update the generated rule
+    function updateGeneratedRule() {
+    const ruleBox = document.getElementById('generated-rule');
+
+    // If no rarities or items are selected, display a default message
+    if (selectedRarities.length === 0 && selectedItems.length === 0) {
+        ruleBox.value = "No rules generated yet.";  
+        return;
+    }
+
+    let rule = "ItemDisplay[";
+
+    // Add rarities to the rule if selected
+    if (selectedRarities.length > 1) {
+        rule += "(" + selectedRarities.join(" OR ") + ")";
+    } else if (selectedRarities.length === 1) {
+        rule += selectedRarities[0];  // No brackets if only one rarity
+    }
+
+    // Add a space between rarity and item section if both exist
+    if (selectedRarities.length > 0 && selectedItems.length > 0) {
+        rule += " ";  // Add space between rarity and items
+    }
+
+    // Add item codes to the rule if selected
+    if (selectedItems.length > 1) {
+        rule += "(" + selectedItems.map(item => item.ItemCode).join(" OR ") + ")";
+    } else if (selectedItems.length === 1) {
+        rule += selectedItems[0].ItemCode;  // No brackets if only one item
+    }
+
+    rule += "]:";
+    
+    ruleBox.value = rule;  // Update the textarea with the generated rule
+}
+
+
+</script>
+<script>
+    // Arrays to store selected rarities and basics
+    let selectedRarities = [];
+    let selectedBasics = [];
+    
+    // Fetch rarity data from rarity.json located in the "data" folder
+    fetch('data/rarity.json')
+        .then(response => response.json())
+        .then(raritiesData => {
+            const raritySelectionDiv = document.getElementById('rarity-selection');
+    
+            // Loop through the JSON data and create checkboxes for each rarity
+            raritiesData.forEach(rarity => {
+                const rarityDiv = document.createElement('div');
+                rarityDiv.classList.add('rarity-entry');  // To align rarity checkboxes and label neatly
+    
+                // TRUE checkbox for the rarity
+                const trueCheckbox = document.createElement('input');
+                trueCheckbox.type = 'checkbox';
+                trueCheckbox.name = 'rarity-true';
+                trueCheckbox.value = rarity.CODE;
+    
+                // FALSE checkbox for the rarity
+                const falseCheckbox = document.createElement('input');
+                falseCheckbox.type = 'checkbox';
+                falseCheckbox.name = 'rarity-false';
+                falseCheckbox.value = "!" + rarity.CODE;  // Prefix the CODE with '!' for exclusion
+    
+                // Ensure only one checkbox (TRUE or FALSE) is checked at a time
+                trueCheckbox.addEventListener('change', function() {
+                    if (this.checked) {
+                        falseCheckbox.checked = false;  // Uncheck FALSE checkbox
+                        addRarity(this.value);
+                    } else {
+                        removeRarity(this.value);
+                    }
+                });
+    
+                falseCheckbox.addEventListener('change', function() {
+                    if (this.checked) {
+                        trueCheckbox.checked = false;  // Uncheck TRUE checkbox
+                        addRarity(this.value);
+                    } else {
+                        removeRarity(this.value);
+                    }
+                });
+    
+                // Create the label for the rarity
+                const label = document.createElement('label');
+                label.textContent = rarity["Rarity:"];  // Display the rarity name using bracket notation
+    
+                // Add the checkboxes and label to the rarity div
+                rarityDiv.appendChild(trueCheckbox);
+                rarityDiv.appendChild(falseCheckbox);
+                rarityDiv.appendChild(label);
+    
+                // Append the entire rarity div to the rarity-selection area
+                raritySelectionDiv.appendChild(rarityDiv);
+            });
+        })
+        .catch(error => {
+            console.error("Error loading rarity data:", error);
+        });
+    
+    // Function to add a rarity to the selectedRarities array
+    function addRarity(rarityCode) {
+        if (!selectedRarities.includes(rarityCode)) {
+            selectedRarities.push(rarityCode);
+            updateGeneratedRule();
+        }
+    }
+    
+    // Function to remove a rarity from the selectedRarities array
+    function removeRarity(rarityCode) {
+        const index = selectedRarities.indexOf(rarityCode);
+        if (index > -1) {
+            selectedRarities.splice(index, 1);
+            updateGeneratedRule();
+        }
+    }
+    
+    // Function to generate the rule based on the selected rarities, basics, and items
+    function updateGeneratedRule() {
+        const ruleBox = document.getElementById('generated-rule');
+        let rule = "ItemDisplay[";
+    
+        // Add rarities if selected
+        if (selectedRarities.length > 1) {
+            rule += "(" + selectedRarities.join(" OR ") + ")";
+        } else if (selectedRarities.length === 1) {
+            rule += selectedRarities[0];
+        }
+    
+        // Add basics if selected
+        if (selectedBasics.length > 0) {
+            if (selectedRarities.length > 0) rule += " ";  // Add space between rarity and basics
+            rule += selectedBasics.join(" ");
+        }
+    
+        // Add item codes (assuming item selection is already working)
+        if (selectedItems.length > 1) {
+            rule += " (" + selectedItems.map(item => item.ItemCode).join(" OR ") + ")";
+        } else if (selectedItems.length === 1) {
+            rule += " " + selectedItems[0].ItemCode;
+        }
+    
+        rule += "]:";
+        
+        // Update the rule box with the generated rule
+        ruleBox.value = rule;
+    }
+    
+    // Assume there's a function to handle basics checkboxes similar to rarities
+    function addBasic(basicCode) {
+        if (!selectedBasics.includes(basicCode)) {
+            selectedBasics.push(basicCode);
+            updateGeneratedRule();  // Update the rule after basics are selected
+        }
+    }
+    
+    function removeBasic(basicCode) {
+        const index = selectedBasics.indexOf(basicCode);
+        if (index > -1) {
+            selectedBasics.splice(index, 1);
+            updateGeneratedRule();  // Update the rule after basics are deselected
+        }
+    }
+    
+    </script>
+    
+<script>
+    const basics = [
+    { CODE: 'ID', label: 'Identified' },
+    { CODE: 'INF', label: 'Inferior' },
+    { CODE: 'SUP', label: 'Superior' },
+    { CODE: 'ETH', label: 'Ethereal' },
+    { CODE: 'RW', label: 'Runeword' },
+    { CODE: 'GEMMED', label: 'Gemmed' }
+];
+
+const basicsSelectionDiv = document.getElementById('basics-selection');
+
+// Loop through basics and create checkboxes for each
+basics.forEach(basic => {
+    const basicsDiv = document.createElement('div');
+    basicsDiv.classList.add('entry');
+
+    const trueCheckbox = document.createElement('input');
+    trueCheckbox.type = 'checkbox';
+    trueCheckbox.name = 'basics-true';
+    trueCheckbox.value = basic.CODE;
+
+    const falseCheckbox = document.createElement('input');
+    falseCheckbox.type = 'checkbox';
+    falseCheckbox.name = 'basics-false';
+    falseCheckbox.value = "!" + basic.CODE;
+
+    // Only one of TRUE or FALSE can be selected at a time
+    trueCheckbox.addEventListener('change', function() {
+        if (this.checked) {
+            falseCheckbox.checked = false;
+            addBasic(this.value);
+        } else {
+            removeBasic(this.value);
+        }
+    });
+
+    falseCheckbox.addEventListener('change', function() {
+        if (this.checked) {
+            trueCheckbox.checked = false;
+            addBasic(this.value);
+        } else {
+            removeBasic(this.value);
+        }
+    });
+
+    const label = document.createElement('label');
+    label.textContent = basic.label;
+
+    basicsDiv.appendChild(trueCheckbox);
+    basicsDiv.appendChild(falseCheckbox);
+    basicsDiv.appendChild(label);
+
+    basicsSelectionDiv.appendChild(basicsDiv);
+});
+
+</script>
+
+
+
+</body>
+</html>
