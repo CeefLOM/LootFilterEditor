@@ -1,0 +1,26 @@
+[
+ {
+   "CODE": "NMAG",
+   "Rarity:": "Non-Magic"
+ },
+ {
+   "CODE": "MAG",
+   "Rarity:": "Magic"
+ },
+ {
+   "CODE": "RARE",
+   "Rarity:": "Rare"
+ },
+ {
+   "CODE": "UNI",
+   "Rarity:": "Unique"
+ },
+ {
+   "CODE": "SET",
+   "Rarity:": "Set"
+ },
+ {
+   "CODE": "CRAFT",
+   "Rarity:": "Crafted"
+ }
+]

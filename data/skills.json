@@ -1,0 +1,1307 @@
+[
+ {
+   "CODE": "ALLSK",
+   "Name": "All Skills",
+   "Category": "ALL"
+ },
+ {
+   "CODE": "CLSK0",
+   "Name": "Amazon Skills",
+   "Category": "ALL"
+ },
+ {
+   "CODE": "CLSK1",
+   "Name": "Sorceress Skills",
+   "Category": "ALL"
+ },
+ {
+   "CODE": "CLSK2",
+   "Name": "Necromancer Skills",
+   "Category": "ALL"
+ },
+ {
+   "CODE": "CLSK3",
+   "Name": "Paladin Skills",
+   "Category": "ALL"
+ },
+ {
+   "CODE": "CLSK4",
+   "Name": "Barbarian Skills",
+   "Category": "ALL"
+ },
+ {
+   "CODE": "CLSK5",
+   "Name": "Druid Skills",
+   "Category": "ALL"
+ },
+ {
+   "CODE": "CLSK6",
+   "Name": "Assassin Skills",
+   "Category": "ALL"
+ },
+ {
+   "CODE": "TABSK0",
+   "Name": "Bow and Crossbow Skills",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "TABSK1",
+   "Name": "Passive and Magic Skills",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "TABSK2",
+   "Name": "Javelin and Spear Skills",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "TABSK8",
+   "Name": "Fire Spells",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "TABSK9",
+   "Name": "Lightning Spells",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "TABSK10",
+   "Name": "Cold Spells",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "TABSK16",
+   "Name": "Curses",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "TABSK17",
+   "Name": "Poison & Bone Spells",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "TABSK18",
+   "Name": "Summoning Spells",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "TABSK24",
+   "Name": "Combat Skills",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "TABSK25",
+   "Name": "Offensive Auras",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "TABSK26",
+   "Name": "Defensive Auras",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "TABSK32",
+   "Name": "Combat Skills",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "TABSK33",
+   "Name": "Combat Masteries",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "TABSK34",
+   "Name": "Warcries",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "TABSK40",
+   "Name": "Summoning",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "TABSK41",
+   "Name": "Shape Shifting",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "TABSK42",
+   "Name": "Elemental",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "TABSK48",
+   "Name": "Traps",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "TABSK49",
+   "Name": "Shadow Disciplines",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "TABSK50",
+   "Name": "Martial Arts",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK6",
+   "Name": "Magic Arrow",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK7",
+   "Name": "Fire Arrow",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK8",
+   "Name": "Inner Sight",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK9",
+   "Name": "Critical Strike",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK10",
+   "Name": "Jab",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK11",
+   "Name": "Cold Arrow",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK12",
+   "Name": "Multiple Shot",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK13",
+   "Name": "Dodge",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK14",
+   "Name": "Power Strike",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK15",
+   "Name": "Poison Javelin",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK16",
+   "Name": "Exploding Arrow",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK17",
+   "Name": "Slow Movement",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK18",
+   "Name": "Avoid",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK19",
+   "Name": "Javelin and Spear Mastery",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK20",
+   "Name": "Lightning Bolt",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK21",
+   "Name": "Ice Arrow",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK22",
+   "Name": "Guided Arrow",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK23",
+   "Name": "Penetrate",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK24",
+   "Name": "Charged Strike",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK25",
+   "Name": "Plague Javelin",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK26",
+   "Name": "Strafe",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK27",
+   "Name": "Immolation Arrow",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK28",
+   "Name": "Decoy",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK29",
+   "Name": "Evade",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK30",
+   "Name": "Fend",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK31",
+   "Name": "Freezing Arrow",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK32",
+   "Name": "Valkyrie",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK33",
+   "Name": "Pierce",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK34",
+   "Name": "Lightning Strike",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK35",
+   "Name": "Lightning Fury",
+   "Category": "Amazon"
+ },
+ {
+   "CODE": "SK36",
+   "Name": "Fire Bolt",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK37",
+   "Name": "Warmth",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK38",
+   "Name": "Charged Bolt",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK39",
+   "Name": "Ice Bolt",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK40",
+   "Name": "Cold Enchant",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK41",
+   "Name": "Inferno",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK42",
+   "Name": "Static Field",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK43",
+   "Name": "Telekinesis",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK44",
+   "Name": "Frost Nova",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK45",
+   "Name": "Ice Blast",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK46",
+   "Name": "Blaze",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK47",
+   "Name": "Fire Ball",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK48",
+   "Name": "Nova",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK49",
+   "Name": "Lightning",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK50",
+   "Name": "Shiver Armor",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK51",
+   "Name": "Fire Wall",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK52",
+   "Name": "Enchant Fire",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK53",
+   "Name": "Chain Lightning",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK54",
+   "Name": "Teleport",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK55",
+   "Name": "Glacial Spike",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK56",
+   "Name": "Meteor",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK57",
+   "Name": "Thunder Storm",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK58",
+   "Name": "Energy Shield",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK59",
+   "Name": "Blizzard",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK60",
+   "Name": "Chilling Armor",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK61",
+   "Name": "Fire Mastery",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK62",
+   "Name": "Hydra",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK63",
+   "Name": "Lightning Mastery",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK64",
+   "Name": "Frozen Orb",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK65",
+   "Name": "Cold Mastery",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK369",
+   "Name": "Ice Barrage",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK376",
+   "Name": "Combustion",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK383",
+   "Name": "Lesser Hydra",
+   "Category": "Sorceress"
+ },
+ {
+   "CODE": "SK66",
+   "Name": "Amplify Damage",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK67",
+   "Name": "Teeth",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK68",
+   "Name": "Bone Armor",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK69",
+   "Name": "Skeleton Mastery",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK70",
+   "Name": "Raise Skeleton Warrior",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK71",
+   "Name": "Dim Vision",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK72",
+   "Name": "Weaken",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK73",
+   "Name": "Poison Strike",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK74",
+   "Name": "Corpse Explosion",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK75",
+   "Name": "Clay Golem",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK76",
+   "Name": "Iron Maiden",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK77",
+   "Name": "Terror",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK78",
+   "Name": "Bone Wall",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK79",
+   "Name": "Golem Mastery",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK80",
+   "Name": "Raise Skeletal Mage",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK81",
+   "Name": "Confuse",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK82",
+   "Name": "Life Tap",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK83",
+   "Name": "Desecrate",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK84",
+   "Name": "Bone Spear",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK85",
+   "Name": "Blood Golem",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK86",
+   "Name": "Attract",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK87",
+   "Name": "Decrepify",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK88",
+   "Name": "Bone Prison",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK89",
+   "Name": "Raise Skeleton Archer",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK90",
+   "Name": "Iron Golem",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK91",
+   "Name": "Lower Resist",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK92",
+   "Name": "Poison Nova",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK93",
+   "Name": "Bone Spirit",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK94",
+   "Name": "Fire Golem",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK95",
+   "Name": "Revive",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK367",
+   "Name": "Blood Warp",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK374",
+   "Name": "Curse Mastery",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK381",
+   "Name": "Dark Pact",
+   "Category": "Necromancer"
+ },
+ {
+   "CODE": "SK96",
+   "Name": "Sacrifice",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK97",
+   "Name": "Smite",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK98",
+   "Name": "Might",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK99",
+   "Name": "Prayer",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK100",
+   "Name": "Resist Fire",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK101",
+   "Name": "Holy Bolt",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK102",
+   "Name": "Holy Fire",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK103",
+   "Name": "Thorns",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK104",
+   "Name": "Defiance",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK105",
+   "Name": "Resist Cold",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK106",
+   "Name": "Zeal",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK107",
+   "Name": "Charge",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK108",
+   "Name": "Blessed Aim",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK109",
+   "Name": "Cleansing",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK110",
+   "Name": "Resist Lightning",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK111",
+   "Name": "Vengeance",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK112",
+   "Name": "Blessed Hammer",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK113",
+   "Name": "Concentration",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK114",
+   "Name": "Holy Freeze",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK115",
+   "Name": "Vigor",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK116",
+   "Name": "Holy Sword",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK117",
+   "Name": "Holy Shield",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK118",
+   "Name": "Holy Shock",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK119",
+   "Name": "Sanctuary",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK120",
+   "Name": "Meditation",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK121",
+   "Name": "Fist of the Heavens",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK122",
+   "Name": "Fanaticism",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK123",
+   "Name": "Conviction",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK124",
+   "Name": "Redemption",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK125",
+   "Name": "Salvation",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK364",
+   "Name": "Holy Nova",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK371",
+   "Name": "Holy Light",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK378",
+   "Name": "Joust",
+   "Category": "Paladin"
+ },
+ {
+   "CODE": "SK126",
+   "Name": "Bash",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK127",
+   "Name": "Sword Mastery",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK128",
+   "Name": "General Mastery",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK129",
+   "Name": "Mace Mastery",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK130",
+   "Name": "Howl",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK131",
+   "Name": "Find Potion",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK132",
+   "Name": "Leap",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK133",
+   "Name": "Double Swing",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK134",
+   "Name": "Polearm and Spear Mastery",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK135",
+   "Name": "Throwing Mastery",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK136",
+   "Name": "Spear Mastery",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK137",
+   "Name": "Taunt",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK138",
+   "Name": "Shout",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK139",
+   "Name": "Stun",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK140",
+   "Name": "Double Throw",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK141",
+   "Name": "Combat Reflexes",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK142",
+   "Name": "Find Item",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK143",
+   "Name": "Leap Attack",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK144",
+   "Name": "Concentrate",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK145",
+   "Name": "Iron Skin",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK146",
+   "Name": "Battle Cry",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK147",
+   "Name": "Frenzy",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK148",
+   "Name": "Increased Speed",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK149",
+   "Name": "Battle Orders",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK150",
+   "Name": "Grim Ward",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK151",
+   "Name": "Whirlwind",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK152",
+   "Name": "Berserk",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK153",
+   "Name": "Natural Resistance",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK154",
+   "Name": "War Cry",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK155",
+   "Name": "Battle Command",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK368",
+   "Name": "Deep Wounds",
+   "Category": "Barbarian"
+ },
+ {
+   "CODE": "SK221",
+   "Name": "Raven",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK222",
+   "Name": "Poison Creeper",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK223",
+   "Name": "Werewolf",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK224",
+   "Name": "Lycanthropy",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK225",
+   "Name": "Firestorm",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK226",
+   "Name": "Oak Sage",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK227",
+   "Name": "Summon Spirit Wolf",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK228",
+   "Name": "Werebear",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK229",
+   "Name": "Molten Boulder",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK230",
+   "Name": "Arctic Blast",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK231",
+   "Name": "Carrion Vine",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK232",
+   "Name": "Feral Rage",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK233",
+   "Name": "Maul",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK234",
+   "Name": "Fissure",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK235",
+   "Name": "Cyclone Armor",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK236",
+   "Name": "Heart of Wolverine",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK237",
+   "Name": "Summon Dire Wolf",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK238",
+   "Name": "Rabies",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK239",
+   "Name": "Fire Claws",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK240",
+   "Name": "Twister",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK241",
+   "Name": "Solar Creeper",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK242",
+   "Name": "Hunger",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK243",
+   "Name": "Shock Wave",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK244",
+   "Name": "Volcano",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK245",
+   "Name": "Tornado",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK246",
+   "Name": "Spirit of Barbs",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK247",
+   "Name": "Summon Grizzly",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK248",
+   "Name": "Fury",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK249",
+   "Name": "Armageddon",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK250",
+   "Name": "Hurricane",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK370",
+   "Name": "Gust",
+   "Category": "Druid"
+ },
+ {
+   "CODE": "SK251",
+   "Name": "Fire Blast",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK252",
+   "Name": "Claw and Dagger Mastery",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK253",
+   "Name": "Psychic Hammer",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK254",
+   "Name": "Tiger Strike",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK255",
+   "Name": "Dragon Talon",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK256",
+   "Name": "Shock Web",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK257",
+   "Name": "Blade Sentinel",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK258",
+   "Name": "Burst of Speed",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK259",
+   "Name": "Fists of Fire",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK260",
+   "Name": "Dragon Claw",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK261",
+   "Name": "Charged Bolt Sentry",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK262",
+   "Name": "Wake of Fire",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK263",
+   "Name": "Weapon Block",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK264",
+   "Name": "Cloak of Shadows",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK265",
+   "Name": "Cobra Strike",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK266",
+   "Name": "Blade Fury",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK267",
+   "Name": "Fade",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK268",
+   "Name": "Shadow Warrior",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK269",
+   "Name": "Claws of Thunder",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK270",
+   "Name": "Dragon Tail",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK271",
+   "Name": "Chain Lightning Sentry",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK272",
+   "Name": "Wake of Inferno",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK273",
+   "Name": "Mind Blast",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK274",
+   "Name": "Blades of Ice",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK275",
+   "Name": "Dragon Flight",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK276",
+   "Name": "Death Sentry",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK277",
+   "Name": "Blade Shield",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK278",
+   "Name": "Venom",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK279",
+   "Name": "Shadow Master",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK280",
+   "Name": "Phoenix Strike",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK366",
+   "Name": "Lightning Sentry",
+   "Category": "Assassin"
+ },
+ {
+   "CODE": "SK357",
+   "Name": "Blink",
+   "Category": "OSkills"
+ },
+ {
+   "CODE": "SK380",
+   "Name": "Blade Dance",
+   "Category": "OSkills"
+ },
+ {
+   "CODE": "SK391",
+   "Name": "Lesser Fade",
+   "Category": "OSkills"
+ },
+ {
+   "CODE": "SK400",
+   "Name": "Bone Nova",
+   "Category": "OSkills"
+ },
+ {
+   "CODE": "SK442",
+   "Name": "Amplify Damage (Proc)",
+   "Category": "OSkills"
+ },
+ {
+   "CODE": "SK443",
+   "Name": "Weaken (Proc)",
+   "Category": "OSkills"
+ },
+ {
+   "CODE": "SK444",
+   "Name": "Iron Maiden (Proc)",
+   "Category": "OSkills"
+ },
+ {
+   "CODE": "SK445",
+   "Name": "Life Tap (Proc)",
+   "Category": "OSkills"
+ },
+ {
+   "CODE": "SK446",
+   "Name": "Decrepify (Proc)",
+   "Category": "OSkills"
+ },
+ {
+   "CODE": "SK447",
+   "Name": "Lower Resist (Proc)",
+   "Category": "OSkills"
+ }
+]

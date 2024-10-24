@@ -1,0 +1,3334 @@
+[
+ {
+   "Category": "Armour",
+   "SubCategory": "Helmet",
+   "Tier": "Normal",
+   "ItemCode": "cap",
+   "Name": "Cap"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Helmet",
+   "Tier": "Normal",
+   "ItemCode": "skp",
+   "Name": "Skull Cap"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Helmet",
+   "Tier": "Normal",
+   "ItemCode": "hlm",
+   "Name": "Helm"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Helmet",
+   "Tier": "Normal",
+   "ItemCode": "fhl",
+   "Name": "Full Helm"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Helmet",
+   "Tier": "Normal",
+   "ItemCode": "msk",
+   "Name": "Mask"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Helmet",
+   "Tier": "Normal",
+   "ItemCode": "bhm",
+   "Name": "Bone Helm"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Helmet",
+   "Tier": "Normal",
+   "ItemCode": "ghm",
+   "Name": "Great Helm"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Helmet",
+   "Tier": "Normal",
+   "ItemCode": "crn",
+   "Name": "Crown"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Helmet",
+   "Tier": "Exceptional",
+   "ItemCode": "xap",
+   "Name": "War Hat"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Helmet",
+   "Tier": "Exceptional",
+   "ItemCode": "xkp",
+   "Name": "Sallet"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Helmet",
+   "Tier": "Exceptional",
+   "ItemCode": "xlm",
+   "Name": "Casque"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Helmet",
+   "Tier": "Exceptional",
+   "ItemCode": "xhl",
+   "Name": "Basinet"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Helmet",
+   "Tier": "Exceptional",
+   "ItemCode": "xsk",
+   "Name": "Death Mask"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Helmet",
+   "Tier": "Exceptional",
+   "ItemCode": "xh9",
+   "Name": "Grim Helm"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Helmet",
+   "Tier": "Exceptional",
+   "ItemCode": "xhm",
+   "Name": "Winged Helm"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Helmet",
+   "Tier": "Exceptional",
+   "ItemCode": "xrn",
+   "Name": "Grand Crown"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Helmet",
+   "Tier": "Elite",
+   "ItemCode": "uap",
+   "Name": "Shako"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Helmet",
+   "Tier": "Elite",
+   "ItemCode": "ukp",
+   "Name": "Hydraskull"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Helmet",
+   "Tier": "Elite",
+   "ItemCode": "ulm",
+   "Name": "Armet"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Helmet",
+   "Tier": "Elite",
+   "ItemCode": "uhl",
+   "Name": "Giant Conch"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Helmet",
+   "Tier": "Elite",
+   "ItemCode": "usk",
+   "Name": "Demonhead"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Helmet",
+   "Tier": "Elite",
+   "ItemCode": "uh9",
+   "Name": "Bone Visage"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Helmet",
+   "Tier": "Elite",
+   "ItemCode": "uhm",
+   "Name": "Spired Helm"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Helmet",
+   "Tier": "Elite",
+   "ItemCode": "urn",
+   "Name": "Corona"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Circlet",
+   "Tier": "Normal",
+   "ItemCode": "ci1",
+   "Name": "Coronet"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Circlet",
+   "Tier": "Exceptional",
+   "ItemCode": "ci2",
+   "Name": "Tiara"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Circlet",
+   "Tier": "Elite",
+   "ItemCode": "ci3",
+   "Name": "Diadem"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Normal",
+   "ItemCode": "qui",
+   "Name": "Quilted Armor"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Normal",
+   "ItemCode": "lea",
+   "Name": "Leather Armor"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Normal",
+   "ItemCode": "hla",
+   "Name": "Hard Leather Armor"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Normal",
+   "ItemCode": "stu",
+   "Name": "Studded Leather"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Normal",
+   "ItemCode": "rng",
+   "Name": "Ring Mail"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Normal",
+   "ItemCode": "scl",
+   "Name": "Scale Mail"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Normal",
+   "ItemCode": "chn",
+   "Name": "Chain Mail"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Normal",
+   "ItemCode": "brs",
+   "Name": "Breast Plate"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Normal",
+   "ItemCode": "spl",
+   "Name": "Splint Mail"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Normal",
+   "ItemCode": "plt",
+   "Name": "Plate Mail"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Normal",
+   "ItemCode": "fld",
+   "Name": "Field Plate"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Normal",
+   "ItemCode": "gth",
+   "Name": "Gothic Plate"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Normal",
+   "ItemCode": "ltp",
+   "Name": "Light Plate"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Normal",
+   "ItemCode": "ful",
+   "Name": "Full Plate Mail"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Normal",
+   "ItemCode": "aar",
+   "Name": "Ancient Armor"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Exceptional",
+   "ItemCode": "xui",
+   "Name": "Ghost Armor"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Exceptional",
+   "ItemCode": "xea",
+   "Name": "Serpentskin Armor"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Exceptional",
+   "ItemCode": "xla",
+   "Name": "Demonhide Armor"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Exceptional",
+   "ItemCode": "xtu",
+   "Name": "Trellised Armor"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Exceptional",
+   "ItemCode": "xng",
+   "Name": "Linked Mail"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Exceptional",
+   "ItemCode": "xcl",
+   "Name": "Tigulated Mail"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Exceptional",
+   "ItemCode": "xhn",
+   "Name": "Mesh Armor"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Exceptional",
+   "ItemCode": "xrs",
+   "Name": "Cuirass"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Exceptional",
+   "ItemCode": "xpl",
+   "Name": "Russet Armor"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Exceptional",
+   "ItemCode": "xlt",
+   "Name": "Templar Coat"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Exceptional",
+   "ItemCode": "xld",
+   "Name": "Sharktooth Armor"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Exceptional",
+   "ItemCode": "xth",
+   "Name": "Embossed Plate"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Exceptional",
+   "ItemCode": "xtp",
+   "Name": "Mage Plate"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Exceptional",
+   "ItemCode": "xul",
+   "Name": "Chaos Armor"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Exceptional",
+   "ItemCode": "xar",
+   "Name": "Ornate Plate"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Elite",
+   "ItemCode": "uui",
+   "Name": "Dusk Shroud"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Elite",
+   "ItemCode": "uea",
+   "Name": "Wyrmhide"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Elite",
+   "ItemCode": "ula",
+   "Name": "Scarab Husk"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Elite",
+   "ItemCode": "utu",
+   "Name": "Wire Fleece"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Elite",
+   "ItemCode": "ung",
+   "Name": "Diamond Mail"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Elite",
+   "ItemCode": "ucl",
+   "Name": "Loricated Mail"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Elite",
+   "ItemCode": "uhn",
+   "Name": "Boneweave"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Elite",
+   "ItemCode": "urs",
+   "Name": "Great Hauberk"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Elite",
+   "ItemCode": "upl",
+   "Name": "Balrog Skin"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Elite",
+   "ItemCode": "ult",
+   "Name": "Hellforge Plate"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Elite",
+   "ItemCode": "uld",
+   "Name": "Kraken Shell"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Elite",
+   "ItemCode": "uth",
+   "Name": "Lacquered Plate"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Elite",
+   "ItemCode": "utp",
+   "Name": "Archon Plate"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Elite",
+   "ItemCode": "uul",
+   "Name": "Shadow Plate"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Body Armour",
+   "Tier": "Elite",
+   "ItemCode": "uar",
+   "Name": "Sacred Armor"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Shield",
+   "Tier": "Normal",
+   "ItemCode": "buc",
+   "Name": "Buckler"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Shield",
+   "Tier": "Normal",
+   "ItemCode": "sml",
+   "Name": "Small Shield"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Shield",
+   "Tier": "Normal",
+   "ItemCode": "lrg",
+   "Name": "Large Shield"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Shield",
+   "Tier": "Normal",
+   "ItemCode": "spk",
+   "Name": "Spiked Shield"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Shield",
+   "Tier": "Normal",
+   "ItemCode": "kit",
+   "Name": "Kite Shield"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Shield",
+   "Tier": "Normal",
+   "ItemCode": "bsh",
+   "Name": "Bone Shield"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Shield",
+   "Tier": "Normal",
+   "ItemCode": "tow",
+   "Name": "Tower Shield"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Shield",
+   "Tier": "Normal",
+   "ItemCode": "gts",
+   "Name": "Gothic Shield"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Shield",
+   "Tier": "Exceptional",
+   "ItemCode": "xuc",
+   "Name": "Defender"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Shield",
+   "Tier": "Exceptional",
+   "ItemCode": "xml",
+   "Name": "Round Shield"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Shield",
+   "Tier": "Exceptional",
+   "ItemCode": "xrg",
+   "Name": "Scutum"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Shield",
+   "Tier": "Exceptional",
+   "ItemCode": "xpk",
+   "Name": "Barbed Shield"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Shield",
+   "Tier": "Exceptional",
+   "ItemCode": "xit",
+   "Name": "Dragon Shield"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Shield",
+   "Tier": "Exceptional",
+   "ItemCode": "xsh",
+   "Name": "Grim Shield"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Shield",
+   "Tier": "Exceptional",
+   "ItemCode": "xow",
+   "Name": "Pavise"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Shield",
+   "Tier": "Exceptional",
+   "ItemCode": "xts",
+   "Name": "Ancient Shield"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Shield",
+   "Tier": "Elite",
+   "ItemCode": "uuc",
+   "Name": "Heater"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Shield",
+   "Tier": "Elite",
+   "ItemCode": "uml",
+   "Name": "Luna"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Shield",
+   "Tier": "Elite",
+   "ItemCode": "urg",
+   "Name": "Hyperion"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Shield",
+   "Tier": "Elite",
+   "ItemCode": "upk",
+   "Name": "Blade Barrier"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Shield",
+   "Tier": "Elite",
+   "ItemCode": "uit",
+   "Name": "Monarch"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Shield",
+   "Tier": "Elite",
+   "ItemCode": "ush",
+   "Name": "Troll Nest"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Shield",
+   "Tier": "Elite",
+   "ItemCode": "uow",
+   "Name": "Aegis"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Shield",
+   "Tier": "Elite",
+   "ItemCode": "uts",
+   "Name": "Ward"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Gloves",
+   "Tier": "Normal",
+   "ItemCode": "lgl",
+   "Name": "Leather Gloves"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Gloves",
+   "Tier": "Normal",
+   "ItemCode": "vgl",
+   "Name": "Heavy Gloves"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Gloves",
+   "Tier": "Normal",
+   "ItemCode": "mgl",
+   "Name": "Chain Gloves"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Gloves",
+   "Tier": "Normal",
+   "ItemCode": "tgl",
+   "Name": "Light Gauntlets"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Gloves",
+   "Tier": "Normal",
+   "ItemCode": "hgl",
+   "Name": "Gauntlets"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Gloves",
+   "Tier": "Exceptional",
+   "ItemCode": "xlg",
+   "Name": "Demonhide Gloves"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Gloves",
+   "Tier": "Exceptional",
+   "ItemCode": "xvg",
+   "Name": "Sharkskin Gloves"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Gloves",
+   "Tier": "Exceptional",
+   "ItemCode": "xmg",
+   "Name": "Heavy Bracers"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Gloves",
+   "Tier": "Exceptional",
+   "ItemCode": "xtg",
+   "Name": "Battle Gauntlets"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Gloves",
+   "Tier": "Exceptional",
+   "ItemCode": "xhg",
+   "Name": "War Gauntlets"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Gloves",
+   "Tier": "Elite",
+   "ItemCode": "ulg",
+   "Name": "Bramble Mitts"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Gloves",
+   "Tier": "Elite",
+   "ItemCode": "uvg",
+   "Name": "Vampirebone Gloves"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Gloves",
+   "Tier": "Elite",
+   "ItemCode": "umg",
+   "Name": "Vambraces"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Gloves",
+   "Tier": "Elite",
+   "ItemCode": "utg",
+   "Name": "Crusader Gauntlets"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Gloves",
+   "Tier": "Elite",
+   "ItemCode": "uhg",
+   "Name": "Ogre Gauntlets"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Boots",
+   "Tier": "Normal",
+   "ItemCode": "lbt",
+   "Name": "Boots"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Boots",
+   "Tier": "Normal",
+   "ItemCode": "vbt",
+   "Name": "Heavy Boots"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Boots",
+   "Tier": "Normal",
+   "ItemCode": "mbt",
+   "Name": "Chain Boots"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Boots",
+   "Tier": "Normal",
+   "ItemCode": "tbt",
+   "Name": "Light Plated Boots"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Boots",
+   "Tier": "Normal",
+   "ItemCode": "hbt",
+   "Name": "Greaves"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Boots",
+   "Tier": "Exceptional",
+   "ItemCode": "xlb",
+   "Name": "Demonhide Boots"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Boots",
+   "Tier": "Exceptional",
+   "ItemCode": "xvb",
+   "Name": "Sharkskin Boots"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Boots",
+   "Tier": "Exceptional",
+   "ItemCode": "xmb",
+   "Name": "Mesh Boots"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Boots",
+   "Tier": "Exceptional",
+   "ItemCode": "xtb",
+   "Name": "Battle Boots"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Boots",
+   "Tier": "Exceptional",
+   "ItemCode": "xhb",
+   "Name": "War Boots"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Boots",
+   "Tier": "Elite",
+   "ItemCode": "ulb",
+   "Name": "Wyrmhide Boots"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Boots",
+   "Tier": "Elite",
+   "ItemCode": "uvb",
+   "Name": "Scarabshell Boots"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Boots",
+   "Tier": "Elite",
+   "ItemCode": "umb",
+   "Name": "Boneweave Boots"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Boots",
+   "Tier": "Elite",
+   "ItemCode": "utb",
+   "Name": "Mirrored Boots"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Boots",
+   "Tier": "Elite",
+   "ItemCode": "uhb",
+   "Name": "Myrmidon Greaves"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Belt",
+   "Tier": "Normal",
+   "ItemCode": "lbl",
+   "Name": "Sash"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Belt",
+   "Tier": "Normal",
+   "ItemCode": "vbl",
+   "Name": "Light Belt"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Belt",
+   "Tier": "Normal",
+   "ItemCode": "mbl",
+   "Name": "Belt"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Belt",
+   "Tier": "Normal",
+   "ItemCode": "tbl",
+   "Name": "Heavy Belt"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Belt",
+   "Tier": "Normal",
+   "ItemCode": "hbl",
+   "Name": "Plated Belt"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Belt",
+   "Tier": "Exceptional",
+   "ItemCode": "zlb",
+   "Name": "Demonhide Sash"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Belt",
+   "Tier": "Exceptional",
+   "ItemCode": "zvb",
+   "Name": "Sharkskin Belt"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Belt",
+   "Tier": "Exceptional",
+   "ItemCode": "zmb",
+   "Name": "Mesh Belt"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Belt",
+   "Tier": "Exceptional",
+   "ItemCode": "ztb",
+   "Name": "Battle Belt"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Belt",
+   "Tier": "Exceptional",
+   "ItemCode": "zhb",
+   "Name": "War Belt"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Belt",
+   "Tier": "Elite",
+   "ItemCode": "ulc",
+   "Name": "Spiderweb Sash"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Belt",
+   "Tier": "Elite",
+   "ItemCode": "uvc",
+   "Name": "Vampirefang Belt"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Belt",
+   "Tier": "Elite",
+   "ItemCode": "umc",
+   "Name": "Mithril Coil"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Belt",
+   "Tier": "Elite",
+   "ItemCode": "utc",
+   "Name": "Troll Belt"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Belt",
+   "Tier": "Elite",
+   "ItemCode": "uhc",
+   "Name": "Colossus Girdle"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Druid Pelt",
+   "Tier": "Normal",
+   "ItemCode": "dr1",
+   "Name": "Wolf Head"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Druid Pelt",
+   "Tier": "Normal",
+   "ItemCode": "dr2",
+   "Name": "Hawk Helm"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Druid Pelt",
+   "Tier": "Normal",
+   "ItemCode": "dr3",
+   "Name": "Antlers"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Druid Pelt",
+   "Tier": "Normal",
+   "ItemCode": "dr4",
+   "Name": "Falcon Mask"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Druid Pelt",
+   "Tier": "Normal",
+   "ItemCode": "dr5",
+   "Name": "Spirit Mask"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Druid Pelt",
+   "Tier": "Exceptional",
+   "ItemCode": "dr6",
+   "Name": "Alpha Helm"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Druid Pelt",
+   "Tier": "Exceptional",
+   "ItemCode": "dr7",
+   "Name": "Griffon Headress"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Druid Pelt",
+   "Tier": "Exceptional",
+   "ItemCode": "dr8",
+   "Name": "Hunter's Guise"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Druid Pelt",
+   "Tier": "Exceptional",
+   "ItemCode": "dr9",
+   "Name": "Sacred Feathers"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Druid Pelt",
+   "Tier": "Exceptional",
+   "ItemCode": "dra",
+   "Name": "Totemic Mask"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Druid Pelt",
+   "Tier": "Elite",
+   "ItemCode": "drb",
+   "Name": "Blood Spirit"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Druid Pelt",
+   "Tier": "Elite",
+   "ItemCode": "drc",
+   "Name": "Sun Spirit"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Druid Pelt",
+   "Tier": "Elite",
+   "ItemCode": "drd",
+   "Name": "Earth Spirit"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Druid Pelt",
+   "Tier": "Elite",
+   "ItemCode": "dre",
+   "Name": "Sky Spirit"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Druid Pelt",
+   "Tier": "Elite",
+   "ItemCode": "drf",
+   "Name": "Dream Spirit"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Barbarian Helm",
+   "Tier": "Normal",
+   "ItemCode": "ba1",
+   "Name": "Jawbone Cap"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Barbarian Helm",
+   "Tier": "Normal",
+   "ItemCode": "ba2",
+   "Name": "Fanged Helm"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Barbarian Helm",
+   "Tier": "Normal",
+   "ItemCode": "ba3",
+   "Name": "Horned Helm"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Barbarian Helm",
+   "Tier": "Normal",
+   "ItemCode": "ba4",
+   "Name": "Assault Helmet"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Barbarian Helm",
+   "Tier": "Normal",
+   "ItemCode": "ba5",
+   "Name": "Avenger Guard"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Barbarian Helm",
+   "Tier": "Exceptional",
+   "ItemCode": "ba6",
+   "Name": "Jawbone Visor"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Barbarian Helm",
+   "Tier": "Exceptional",
+   "ItemCode": "ba7",
+   "Name": "Lion Helm"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Barbarian Helm",
+   "Tier": "Exceptional",
+   "ItemCode": "ba8",
+   "Name": "Rage Mask"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Barbarian Helm",
+   "Tier": "Exceptional",
+   "ItemCode": "ba9",
+   "Name": "Savage Helmet"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Barbarian Helm",
+   "Tier": "Exceptional",
+   "ItemCode": "baa",
+   "Name": "Slayer Guard"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Barbarian Helm",
+   "Tier": "Elite",
+   "ItemCode": "bab",
+   "Name": "Carnage Helm"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Barbarian Helm",
+   "Tier": "Elite",
+   "ItemCode": "bac",
+   "Name": "Fury Visor"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Barbarian Helm",
+   "Tier": "Elite",
+   "ItemCode": "bad",
+   "Name": "Destroyer Helm"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Barbarian Helm",
+   "Tier": "Elite",
+   "ItemCode": "bae",
+   "Name": "Conqueror Crown"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Barbarian Helm",
+   "Tier": "Elite",
+   "ItemCode": "baf",
+   "Name": "Guardian Crown"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Paladin Shield",
+   "Tier": "Normal",
+   "ItemCode": "pa1",
+   "Name": "Targe"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Paladin Shield",
+   "Tier": "Normal",
+   "ItemCode": "pa2",
+   "Name": "Rondache"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Paladin Shield",
+   "Tier": "Normal",
+   "ItemCode": "pa3",
+   "Name": "Heraldic Shield"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Paladin Shield",
+   "Tier": "Normal",
+   "ItemCode": "pa4",
+   "Name": "Aerin Shield"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Paladin Shield",
+   "Tier": "Normal",
+   "ItemCode": "pa5",
+   "Name": "Crown Shield"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Paladin Shield",
+   "Tier": "Exceptional",
+   "ItemCode": "pa6",
+   "Name": "Akaran Targe"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Paladin Shield",
+   "Tier": "Exceptional",
+   "ItemCode": "pa7",
+   "Name": "Akaran Rondache"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Paladin Shield",
+   "Tier": "Exceptional",
+   "ItemCode": "pa8",
+   "Name": "Protector Shield"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Paladin Shield",
+   "Tier": "Exceptional",
+   "ItemCode": "pa9",
+   "Name": "Gilded Shield"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Paladin Shield",
+   "Tier": "Exceptional",
+   "ItemCode": "paa",
+   "Name": "Royal Shield"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Paladin Shield",
+   "Tier": "Elite",
+   "ItemCode": "pab",
+   "Name": "Sacred Targe"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Paladin Shield",
+   "Tier": "Elite",
+   "ItemCode": "pac",
+   "Name": "Sacred Rondache"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Paladin Shield",
+   "Tier": "Elite",
+   "ItemCode": "pad",
+   "Name": "Kurast Shield"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Paladin Shield",
+   "Tier": "Elite",
+   "ItemCode": "pae",
+   "Name": "Zakarum Shield"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Paladin Shield",
+   "Tier": "Elite",
+   "ItemCode": "paf",
+   "Name": "Vortex Shield"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Necromancer Head",
+   "Tier": "Normal",
+   "ItemCode": "ne1",
+   "Name": "Preserved Head"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Necromancer Head",
+   "Tier": "Normal",
+   "ItemCode": "ne2",
+   "Name": "Zombie Head"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Necromancer Head",
+   "Tier": "Normal",
+   "ItemCode": "ne3",
+   "Name": "Unraveller Head"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Necromancer Head",
+   "Tier": "Normal",
+   "ItemCode": "ne4",
+   "Name": "Gargoyle Head"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Necromancer Head",
+   "Tier": "Normal",
+   "ItemCode": "ne5",
+   "Name": "Demon Head"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Necromancer Head",
+   "Tier": "Exceptional",
+   "ItemCode": "ne6",
+   "Name": "Mummified Trophy"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Necromancer Head",
+   "Tier": "Exceptional",
+   "ItemCode": "ne7",
+   "Name": "Fetish Trophy"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Necromancer Head",
+   "Tier": "Exceptional",
+   "ItemCode": "ne8",
+   "Name": "Sexton Trophy"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Necromancer Head",
+   "Tier": "Exceptional",
+   "ItemCode": "ne9",
+   "Name": "Cantor Trophy"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Necromancer Head",
+   "Tier": "Exceptional",
+   "ItemCode": "nea",
+   "Name": "Hierophant Trophy"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Necromancer Head",
+   "Tier": "Elite",
+   "ItemCode": "neb",
+   "Name": "Minion Skull"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Necromancer Head",
+   "Tier": "Elite",
+   "ItemCode": "neg",
+   "Name": "Hellspawn Skull"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Necromancer Head",
+   "Tier": "Elite",
+   "ItemCode": "ned",
+   "Name": "Overseer Skull"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Necromancer Head",
+   "Tier": "Elite",
+   "ItemCode": "nee",
+   "Name": "Succubus Skull"
+ },
+ {
+   "Category": "Armour",
+   "SubCategory": "Necromancer Head",
+   "Tier": "Elite",
+   "ItemCode": "nef",
+   "Name": "Bloodlord Skull"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Axe",
+   "Tier": "Normal",
+   "ItemCode": "hax",
+   "Name": "Hand Axe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Axe",
+   "Tier": "Normal",
+   "ItemCode": "axe",
+   "Name": "Axe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Axe",
+   "Tier": "Normal",
+   "ItemCode": "2ax",
+   "Name": "Double Axe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Axe",
+   "Tier": "Normal",
+   "ItemCode": "mpi",
+   "Name": "Military Pick"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Axe",
+   "Tier": "Normal",
+   "ItemCode": "wax",
+   "Name": "War Axe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Axe",
+   "Tier": "Normal",
+   "ItemCode": "lax",
+   "Name": "Large Axe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Axe",
+   "Tier": "Normal",
+   "ItemCode": "bax",
+   "Name": "Broad Axe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Axe",
+   "Tier": "Normal",
+   "ItemCode": "btx",
+   "Name": "Battle Axe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Axe",
+   "Tier": "Normal",
+   "ItemCode": "gax",
+   "Name": "Great Axe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Axe",
+   "Tier": "Normal",
+   "ItemCode": "gix",
+   "Name": "Giant Axe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Axe",
+   "Tier": "Exceptional",
+   "ItemCode": "9ha",
+   "Name": "Hatchet"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Axe",
+   "Tier": "Exceptional",
+   "ItemCode": "9ax",
+   "Name": "Cleaver"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Axe",
+   "Tier": "Exceptional",
+   "ItemCode": "92a",
+   "Name": "Twin Axe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Axe",
+   "Tier": "Exceptional",
+   "ItemCode": "9mp",
+   "Name": "Crowbill"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Axe",
+   "Tier": "Exceptional",
+   "ItemCode": "9wa",
+   "Name": "Naga"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Axe",
+   "Tier": "Exceptional",
+   "ItemCode": "9la",
+   "Name": "Military Axe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Axe",
+   "Tier": "Exceptional",
+   "ItemCode": "9ba",
+   "Name": "Bearded Axe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Axe",
+   "Tier": "Exceptional",
+   "ItemCode": "9bt",
+   "Name": "Tabar"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Axe",
+   "Tier": "Exceptional",
+   "ItemCode": "9ga",
+   "Name": "Gothic Axe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Axe",
+   "Tier": "Exceptional",
+   "ItemCode": "9gi",
+   "Name": "Ancient Axe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Axe",
+   "Tier": "Elite",
+   "ItemCode": "7ha",
+   "Name": "Tomahawk"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Axe",
+   "Tier": "Elite",
+   "ItemCode": "7ax",
+   "Name": "Small Crescent"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Axe",
+   "Tier": "Elite",
+   "ItemCode": "72a",
+   "Name": "Ettin Axe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Axe",
+   "Tier": "Elite",
+   "ItemCode": "7mp",
+   "Name": "War Spike"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Axe",
+   "Tier": "Elite",
+   "ItemCode": "7wa",
+   "Name": "Berserker Axe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Axe",
+   "Tier": "Elite",
+   "ItemCode": "7la",
+   "Name": "Feral Axe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Axe",
+   "Tier": "Elite",
+   "ItemCode": "7ba",
+   "Name": "Silver-edged Axe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Axe",
+   "Tier": "Elite",
+   "ItemCode": "7bt",
+   "Name": "Decapitator"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Axe",
+   "Tier": "Elite",
+   "ItemCode": "7ga",
+   "Name": "Champion Axe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Axe",
+   "Tier": "Elite",
+   "ItemCode": "7gi",
+   "Name": "Glorious Axe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Mace",
+   "Tier": "Normal",
+   "ItemCode": "clb",
+   "Name": "Club"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Mace",
+   "Tier": "Normal",
+   "ItemCode": "spc",
+   "Name": "Spiked Club"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Mace",
+   "Tier": "Normal",
+   "ItemCode": "mac",
+   "Name": "Mace"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Mace",
+   "Tier": "Normal",
+   "ItemCode": "mst",
+   "Name": "Morning Star"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Mace",
+   "Tier": "Normal",
+   "ItemCode": "fla",
+   "Name": "Flail"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Mace",
+   "Tier": "Normal",
+   "ItemCode": "whm",
+   "Name": "War Hammer"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Mace",
+   "Tier": "Normal",
+   "ItemCode": "mau",
+   "Name": "Maul"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Mace",
+   "Tier": "Normal",
+   "ItemCode": "gma",
+   "Name": "Great Maul"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Mace",
+   "Tier": "Exceptional",
+   "ItemCode": "9cl",
+   "Name": "Cudgel"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Mace",
+   "Tier": "Exceptional",
+   "ItemCode": "9sp",
+   "Name": "Barbed Club"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Mace",
+   "Tier": "Exceptional",
+   "ItemCode": "9ma",
+   "Name": "Flanged Mace"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Mace",
+   "Tier": "Exceptional",
+   "ItemCode": "9mt",
+   "Name": "Jagged Star"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Mace",
+   "Tier": "Exceptional",
+   "ItemCode": "9fl",
+   "Name": "Knout"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Mace",
+   "Tier": "Exceptional",
+   "ItemCode": "9wh",
+   "Name": "Battle Hammer"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Mace",
+   "Tier": "Exceptional",
+   "ItemCode": "9m9",
+   "Name": "War Club"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Mace",
+   "Tier": "Exceptional",
+   "ItemCode": "9gm",
+   "Name": "Martel de Fer"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Mace",
+   "Tier": "Elite",
+   "ItemCode": "7cl",
+   "Name": "Truncheon"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Mace",
+   "Tier": "Elite",
+   "ItemCode": "7sp",
+   "Name": "Tyrant Club"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Mace",
+   "Tier": "Elite",
+   "ItemCode": "7ma",
+   "Name": "Reinforced Mace"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Mace",
+   "Tier": "Elite",
+   "ItemCode": "7mt",
+   "Name": "Devil Star"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Mace",
+   "Tier": "Elite",
+   "ItemCode": "7fl",
+   "Name": "Scourge"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Mace",
+   "Tier": "Elite",
+   "ItemCode": "7wh",
+   "Name": "Legendary Mallet"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Mace",
+   "Tier": "Elite",
+   "ItemCode": "7m7",
+   "Name": "Ogre Maul"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Mace",
+   "Tier": "Elite",
+   "ItemCode": "7gm",
+   "Name": "Thunder Maul"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Sword",
+   "Tier": "Normal",
+   "ItemCode": "ssd",
+   "Name": "Short Sword"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Sword",
+   "Tier": "Normal",
+   "ItemCode": "scm",
+   "Name": "Scimitar"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Sword",
+   "Tier": "Normal",
+   "ItemCode": "sbr",
+   "Name": "Sabre"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Sword",
+   "Tier": "Normal",
+   "ItemCode": "flc",
+   "Name": "Falchion"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Sword",
+   "Tier": "Normal",
+   "ItemCode": "crs",
+   "Name": "Crystal Sword"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Sword",
+   "Tier": "Normal",
+   "ItemCode": "bsd",
+   "Name": "Broad Sword"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Sword",
+   "Tier": "Normal",
+   "ItemCode": "lsd",
+   "Name": "Long Sword"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Sword",
+   "Tier": "Normal",
+   "ItemCode": "wsd",
+   "Name": "War Sword"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Sword",
+   "Tier": "Normal",
+   "ItemCode": "2hs",
+   "Name": "Two-handed Sword"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Sword",
+   "Tier": "Normal",
+   "ItemCode": "clm",
+   "Name": "Claymore"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Sword",
+   "Tier": "Normal",
+   "ItemCode": "gis",
+   "Name": "Giant Sword"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Sword",
+   "Tier": "Normal",
+   "ItemCode": "bsw",
+   "Name": "Bastard Sword"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Sword",
+   "Tier": "Normal",
+   "ItemCode": "flb",
+   "Name": "Flamberge"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Sword",
+   "Tier": "Normal",
+   "ItemCode": "gsd",
+   "Name": "Great Sword"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Sword",
+   "Tier": "Exceptional",
+   "ItemCode": "9ss",
+   "Name": "Gladius"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Sword",
+   "Tier": "Exceptional",
+   "ItemCode": "9sm",
+   "Name": "Cutlass"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Sword",
+   "Tier": "Exceptional",
+   "ItemCode": "9sb",
+   "Name": "Shamshir"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Sword",
+   "Tier": "Exceptional",
+   "ItemCode": "9fc",
+   "Name": "Tulwar"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Sword",
+   "Tier": "Exceptional",
+   "ItemCode": "9cr",
+   "Name": "Dimensional Blade"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Sword",
+   "Tier": "Exceptional",
+   "ItemCode": "9bs",
+   "Name": "Battle Sword"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Sword",
+   "Tier": "Exceptional",
+   "ItemCode": "9ls",
+   "Name": "Rune Sword"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Sword",
+   "Tier": "Exceptional",
+   "ItemCode": "9wd",
+   "Name": "Ancient Sword"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Sword",
+   "Tier": "Exceptional",
+   "ItemCode": "92h",
+   "Name": "Espandon"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Sword",
+   "Tier": "Exceptional",
+   "ItemCode": "9cm",
+   "Name": "Dacian Falx"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Sword",
+   "Tier": "Exceptional",
+   "ItemCode": "9gs",
+   "Name": "Tusk Sword"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Sword",
+   "Tier": "Exceptional",
+   "ItemCode": "9b9",
+   "Name": "Gothic Sword"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Sword",
+   "Tier": "Exceptional",
+   "ItemCode": "9fb",
+   "Name": "Zweihander"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Sword",
+   "Tier": "Exceptional",
+   "ItemCode": "9gd",
+   "Name": "Executioner Sword"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Sword",
+   "Tier": "Elite",
+   "ItemCode": "7ss",
+   "Name": "Falcata"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Sword",
+   "Tier": "Elite",
+   "ItemCode": "7sm",
+   "Name": "Ataghan"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Sword",
+   "Tier": "Elite",
+   "ItemCode": "7sb",
+   "Name": "Elegant Blade"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Sword",
+   "Tier": "Elite",
+   "ItemCode": "7fc",
+   "Name": "Hydra Edge"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Sword",
+   "Tier": "Elite",
+   "ItemCode": "7cr",
+   "Name": "Phase Blade"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Sword",
+   "Tier": "Elite",
+   "ItemCode": "7bs",
+   "Name": "Conquest Sword"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Sword",
+   "Tier": "Elite",
+   "ItemCode": "7ls",
+   "Name": "Cryptic Sword"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "One-Handed Sword",
+   "Tier": "Elite",
+   "ItemCode": "7wd",
+   "Name": "Mythical Sword"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Sword",
+   "Tier": "Elite",
+   "ItemCode": "72h",
+   "Name": "Legend Sword"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Sword",
+   "Tier": "Elite",
+   "ItemCode": "7cm",
+   "Name": "Highland Blade"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Sword",
+   "Tier": "Elite",
+   "ItemCode": "7gs",
+   "Name": "Balrog Blade"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Sword",
+   "Tier": "Elite",
+   "ItemCode": "7b7",
+   "Name": "Champion Sword"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Sword",
+   "Tier": "Elite",
+   "ItemCode": "7fb",
+   "Name": "Colossus Sword"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Two-Handed Sword",
+   "Tier": "Elite",
+   "ItemCode": "7gd",
+   "Name": "Colossus Blade"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Dagger",
+   "Tier": "Normal",
+   "ItemCode": "dgr",
+   "Name": "Dagger"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Dagger",
+   "Tier": "Normal",
+   "ItemCode": "dir",
+   "Name": "Dirk"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Dagger",
+   "Tier": "Normal",
+   "ItemCode": "kri",
+   "Name": "Kris"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Dagger",
+   "Tier": "Normal",
+   "ItemCode": "bld",
+   "Name": "Blade"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Dagger",
+   "Tier": "Exceptional",
+   "ItemCode": "9dg",
+   "Name": "Poignard"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Dagger",
+   "Tier": "Exceptional",
+   "ItemCode": "9di",
+   "Name": "Rondel"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Dagger",
+   "Tier": "Exceptional",
+   "ItemCode": "9kr",
+   "Name": "Cinquedeas"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Dagger",
+   "Tier": "Exceptional",
+   "ItemCode": "9bl",
+   "Name": "Stiletto"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Dagger",
+   "Tier": "Elite",
+   "ItemCode": "7dg",
+   "Name": "Bone Knife"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Dagger",
+   "Tier": "Elite",
+   "ItemCode": "7di",
+   "Name": "Mithril Point"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Dagger",
+   "Tier": "Elite",
+   "ItemCode": "7kr",
+   "Name": "Fanged Knife"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Dagger",
+   "Tier": "Elite",
+   "ItemCode": "7bl",
+   "Name": "Legend Spike"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Throwing Weapons",
+   "Tier": "Normal",
+   "ItemCode": "tkf",
+   "Name": "Throwing Knife"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Throwing Weapons",
+   "Tier": "Normal",
+   "ItemCode": "tax",
+   "Name": "Throwing Axe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Throwing Weapons",
+   "Tier": "Normal",
+   "ItemCode": "bkf",
+   "Name": "Balanced Knife"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Throwing Weapons",
+   "Tier": "Normal",
+   "ItemCode": "bal",
+   "Name": "Balanced Axe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Throwing Weapons",
+   "Tier": "Exceptional",
+   "ItemCode": "9tk",
+   "Name": "Battle Dart"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Throwing Weapons",
+   "Tier": "Exceptional",
+   "ItemCode": "9ta",
+   "Name": "Francisca"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Throwing Weapons",
+   "Tier": "Exceptional",
+   "ItemCode": "9bk",
+   "Name": "War Dart"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Throwing Weapons",
+   "Tier": "Exceptional",
+   "ItemCode": "9b8",
+   "Name": "Hurlbat"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Throwing Weapons",
+   "Tier": "Elite",
+   "ItemCode": "7tk",
+   "Name": "Flying Knife"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Throwing Weapons",
+   "Tier": "Elite",
+   "ItemCode": "7ta",
+   "Name": "Flying Axe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Throwing Weapons",
+   "Tier": "Elite",
+   "ItemCode": "7bk",
+   "Name": "Winged Knife"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Throwing Weapons",
+   "Tier": "Elite",
+   "ItemCode": "7b8",
+   "Name": "Winged Axe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Javelins",
+   "Tier": "Normal",
+   "ItemCode": "jav",
+   "Name": "Javelin"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Javelins",
+   "Tier": "Normal",
+   "ItemCode": "pil",
+   "Name": "Pilum"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Javelins",
+   "Tier": "Normal",
+   "ItemCode": "ssp",
+   "Name": "Short Spear"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Javelins",
+   "Tier": "Normal",
+   "ItemCode": "glv",
+   "Name": "Glaive"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Javelins",
+   "Tier": "Normal",
+   "ItemCode": "tsp",
+   "Name": "Throwing Spear"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Javelins",
+   "Tier": "Exceptional",
+   "ItemCode": "9ja",
+   "Name": "War Javelin"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Javelins",
+   "Tier": "Exceptional",
+   "ItemCode": "9pi",
+   "Name": "Great Pilum"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Javelins",
+   "Tier": "Exceptional",
+   "ItemCode": "9s9",
+   "Name": "Simbilan"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Javelins",
+   "Tier": "Exceptional",
+   "ItemCode": "9gl",
+   "Name": "Spiculum"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Javelins",
+   "Tier": "Exceptional",
+   "ItemCode": "9ts",
+   "Name": "Harpoon"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Javelins",
+   "Tier": "Elite",
+   "ItemCode": "7ja",
+   "Name": "Hyperion Javelin"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Javelins",
+   "Tier": "Elite",
+   "ItemCode": "7pi",
+   "Name": "Stygian Pilum"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Javelins",
+   "Tier": "Elite",
+   "ItemCode": "7s7",
+   "Name": "Balrog Spear"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Javelins",
+   "Tier": "Elite",
+   "ItemCode": "7gl",
+   "Name": "Ghost Glaive"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Javelins",
+   "Tier": "Elite",
+   "ItemCode": "7ts",
+   "Name": "Winged Harpoon"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Spear",
+   "Tier": "Normal",
+   "ItemCode": "spr",
+   "Name": "Spear"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Spear",
+   "Tier": "Normal",
+   "ItemCode": "tri",
+   "Name": "Trident"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Spear",
+   "Tier": "Normal",
+   "ItemCode": "brn",
+   "Name": "Brandistock"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Spear",
+   "Tier": "Normal",
+   "ItemCode": "spt",
+   "Name": "Spetum"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Spear",
+   "Tier": "Normal",
+   "ItemCode": "pik",
+   "Name": "Pike"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Spear",
+   "Tier": "Exceptional",
+   "ItemCode": "9sr",
+   "Name": "War Spear"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Spear",
+   "Tier": "Exceptional",
+   "ItemCode": "9tr",
+   "Name": "Fuscina"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Spear",
+   "Tier": "Exceptional",
+   "ItemCode": "9br",
+   "Name": "War Fork"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Spear",
+   "Tier": "Exceptional",
+   "ItemCode": "9st",
+   "Name": "Yari"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Spear",
+   "Tier": "Exceptional",
+   "ItemCode": "9p9",
+   "Name": "Lance"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Spear",
+   "Tier": "Elite",
+   "ItemCode": "7sr",
+   "Name": "Hyperion Spear"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Spear",
+   "Tier": "Elite",
+   "ItemCode": "7tr",
+   "Name": "Stygian Pike"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Spear",
+   "Tier": "Elite",
+   "ItemCode": "7br",
+   "Name": "Mancatcher"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Spear",
+   "Tier": "Elite",
+   "ItemCode": "7st",
+   "Name": "Ghost Spear"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Spear",
+   "Tier": "Elite",
+   "ItemCode": "7p7",
+   "Name": "War Pike"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Polearm",
+   "Tier": "Normal",
+   "ItemCode": "bar",
+   "Name": "Bardiche"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Polearm",
+   "Tier": "Normal",
+   "ItemCode": "vou",
+   "Name": "Voulge"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Polearm",
+   "Tier": "Normal",
+   "ItemCode": "scy",
+   "Name": "Scythe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Polearm",
+   "Tier": "Normal",
+   "ItemCode": "pax",
+   "Name": "Poleaxe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Polearm",
+   "Tier": "Normal",
+   "ItemCode": "hal",
+   "Name": "Halberd"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Polearm",
+   "Tier": "Normal",
+   "ItemCode": "wsc",
+   "Name": "War Scythe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Polearm",
+   "Tier": "Exceptional",
+   "ItemCode": "9b7",
+   "Name": "Lochaber Axe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Polearm",
+   "Tier": "Exceptional",
+   "ItemCode": "9vo",
+   "Name": "Bill"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Polearm",
+   "Tier": "Exceptional",
+   "ItemCode": "9s8",
+   "Name": "Battle Scythe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Polearm",
+   "Tier": "Exceptional",
+   "ItemCode": "9pa",
+   "Name": "Partizan"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Polearm",
+   "Tier": "Exceptional",
+   "ItemCode": "9h9",
+   "Name": "Bec-de-Corbin"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Polearm",
+   "Tier": "Exceptional",
+   "ItemCode": "9wc",
+   "Name": "Grim Scythe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Polearm",
+   "Tier": "Elite",
+   "ItemCode": "7o7",
+   "Name": "Ogre Axe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Polearm",
+   "Tier": "Elite",
+   "ItemCode": "7vo",
+   "Name": "Colossus Voulge"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Polearm",
+   "Tier": "Elite",
+   "ItemCode": "7s8",
+   "Name": "Thresher"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Polearm",
+   "Tier": "Elite",
+   "ItemCode": "7pa",
+   "Name": "Cryptic Axe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Polearm",
+   "Tier": "Elite",
+   "ItemCode": "7h7",
+   "Name": "Great Poleaxe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Polearm",
+   "Tier": "Elite",
+   "ItemCode": "7wc",
+   "Name": "Giant Thresher"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Bow",
+   "Tier": "Normal",
+   "ItemCode": "sbw",
+   "Name": "Short Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Bow",
+   "Tier": "Normal",
+   "ItemCode": "hbw",
+   "Name": "Hunter’s Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Bow",
+   "Tier": "Normal",
+   "ItemCode": "lbw",
+   "Name": "Long Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Bow",
+   "Tier": "Normal",
+   "ItemCode": "cbw",
+   "Name": "Composite Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Bow",
+   "Tier": "Normal",
+   "ItemCode": "sbb",
+   "Name": "Short Battle Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Bow",
+   "Tier": "Normal",
+   "ItemCode": "lbb",
+   "Name": "Long Battle Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Bow",
+   "Tier": "Normal",
+   "ItemCode": "swb",
+   "Name": "Short War Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Bow",
+   "Tier": "Normal",
+   "ItemCode": "lwb",
+   "Name": "Long War Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Bow",
+   "Tier": "Exceptional",
+   "ItemCode": "8sb",
+   "Name": "Edge Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Bow",
+   "Tier": "Exceptional",
+   "ItemCode": "8hb",
+   "Name": "Razor Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Bow",
+   "Tier": "Exceptional",
+   "ItemCode": "8lb",
+   "Name": "Cedar Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Bow",
+   "Tier": "Exceptional",
+   "ItemCode": "8cb",
+   "Name": "Double Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Bow",
+   "Tier": "Exceptional",
+   "ItemCode": "8s8",
+   "Name": "Short Siege Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Bow",
+   "Tier": "Exceptional",
+   "ItemCode": "8l8",
+   "Name": "Large Siege Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Bow",
+   "Tier": "Exceptional",
+   "ItemCode": "8sw",
+   "Name": "Rune Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Bow",
+   "Tier": "Exceptional",
+   "ItemCode": "8lw",
+   "Name": "Gothic Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Bow",
+   "Tier": "Elite",
+   "ItemCode": "6sb",
+   "Name": "Spider Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Bow",
+   "Tier": "Elite",
+   "ItemCode": "6hb",
+   "Name": "Blade Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Bow",
+   "Tier": "Elite",
+   "ItemCode": "6lb",
+   "Name": "Shadow Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Bow",
+   "Tier": "Elite",
+   "ItemCode": "6cb",
+   "Name": "Great Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Bow",
+   "Tier": "Elite",
+   "ItemCode": "6s7",
+   "Name": "Diamond Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Bow",
+   "Tier": "Elite",
+   "ItemCode": "6l7",
+   "Name": "Crusader Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Bow",
+   "Tier": "Elite",
+   "ItemCode": "6sw",
+   "Name": "Ward Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Bow",
+   "Tier": "Elite",
+   "ItemCode": "6lw",
+   "Name": "Hydra Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Crossbow",
+   "Tier": "Normal",
+   "ItemCode": "lxb",
+   "Name": "Light Crossbow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Crossbow",
+   "Tier": "Normal",
+   "ItemCode": "mxb",
+   "Name": "Crossbow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Crossbow",
+   "Tier": "Normal",
+   "ItemCode": "hxb",
+   "Name": "Heavy Crossbow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Crossbow",
+   "Tier": "Normal",
+   "ItemCode": "rxb",
+   "Name": "Repeating Crossbow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Crossbow",
+   "Tier": "Exceptional",
+   "ItemCode": "8lx",
+   "Name": "Arbalest"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Crossbow",
+   "Tier": "Exceptional",
+   "ItemCode": "8mx",
+   "Name": "Siege Crossbow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Crossbow",
+   "Tier": "Exceptional",
+   "ItemCode": "8hx",
+   "Name": "Ballista"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Crossbow",
+   "Tier": "Exceptional",
+   "ItemCode": "8rx",
+   "Name": "Chu-Ko-Nu"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Crossbow",
+   "Tier": "Elite",
+   "ItemCode": "6lx",
+   "Name": "Pellet Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Crossbow",
+   "Tier": "Elite",
+   "ItemCode": "6mx",
+   "Name": "Gorgon Crossbow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Crossbow",
+   "Tier": "Elite",
+   "ItemCode": "6hx",
+   "Name": "Colossus Crossbow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Crossbow",
+   "Tier": "Elite",
+   "ItemCode": "6rx",
+   "Name": "Demon Crossbow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Staff",
+   "Tier": "Normal",
+   "ItemCode": "sst",
+   "Name": "Short Staff"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Staff",
+   "Tier": "Normal",
+   "ItemCode": "lst",
+   "Name": "Long Staff"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Staff",
+   "Tier": "Normal",
+   "ItemCode": "cst",
+   "Name": "Gnarled Staff"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Staff",
+   "Tier": "Normal",
+   "ItemCode": "bst",
+   "Name": "Battle Staff"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Staff",
+   "Tier": "Normal",
+   "ItemCode": "wst",
+   "Name": "War Staff"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Staff",
+   "Tier": "Exceptional",
+   "ItemCode": "8ss",
+   "Name": "Jo Staff"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Staff",
+   "Tier": "Exceptional",
+   "ItemCode": "8ls",
+   "Name": "Quarterstaff"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Staff",
+   "Tier": "Exceptional",
+   "ItemCode": "8cs",
+   "Name": "Cedar Staff"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Staff",
+   "Tier": "Exceptional",
+   "ItemCode": "8bs",
+   "Name": "Gothic Staff"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Staff",
+   "Tier": "Exceptional",
+   "ItemCode": "8ws",
+   "Name": "Rune Staff"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Staff",
+   "Tier": "Elite",
+   "ItemCode": "6ss",
+   "Name": "Walking Stick"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Staff",
+   "Tier": "Elite",
+   "ItemCode": "6ls",
+   "Name": "Stalagmite"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Staff",
+   "Tier": "Elite",
+   "ItemCode": "6cs",
+   "Name": "Elder Staff"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Staff",
+   "Tier": "Elite",
+   "ItemCode": "6bs",
+   "Name": "Shillelagh"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Staff",
+   "Tier": "Elite",
+   "ItemCode": "6ws",
+   "Name": "Archon Staff"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Wand",
+   "Tier": "Normal",
+   "ItemCode": "wnd",
+   "Name": "Wand"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Wand",
+   "Tier": "Normal",
+   "ItemCode": "ywn",
+   "Name": "Yew Wand"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Wand",
+   "Tier": "Normal",
+   "ItemCode": "bwn",
+   "Name": "Bone Wand"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Wand",
+   "Tier": "Normal",
+   "ItemCode": "gwn",
+   "Name": "Grim Wand"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Wand",
+   "Tier": "Exceptional",
+   "ItemCode": "9wn",
+   "Name": "Burnt Wand"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Wand",
+   "Tier": "Exceptional",
+   "ItemCode": "9yw",
+   "Name": "Petrified Wand"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Wand",
+   "Tier": "Exceptional",
+   "ItemCode": "9bw",
+   "Name": "Tomb Wand"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Wand",
+   "Tier": "Exceptional",
+   "ItemCode": "9gw",
+   "Name": "Grave Wand"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Wand",
+   "Tier": "Elite",
+   "ItemCode": "7wn",
+   "Name": "Polished Wand"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Wand",
+   "Tier": "Elite",
+   "ItemCode": "7yw",
+   "Name": "Ghost Wand"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Wand",
+   "Tier": "Elite",
+   "ItemCode": "7bw",
+   "Name": "Lich Wand"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Wand",
+   "Tier": "Elite",
+   "ItemCode": "7gw",
+   "Name": "Unearthed Wand"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Scepter",
+   "Tier": "Normal",
+   "ItemCode": "scp",
+   "Name": "Scepter"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Scepter",
+   "Tier": "Normal",
+   "ItemCode": "gsc",
+   "Name": "Grand Scepter"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Scepter",
+   "Tier": "Normal",
+   "ItemCode": "wsp",
+   "Name": "War Scepter"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Scepter",
+   "Tier": "Exceptional",
+   "ItemCode": "9sc",
+   "Name": "Rune Scepter"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Scepter",
+   "Tier": "Exceptional",
+   "ItemCode": "9qs",
+   "Name": "Holy Water Sprinkler"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Scepter",
+   "Tier": "Exceptional",
+   "ItemCode": "9ws",
+   "Name": "Divine Scepter"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Scepter",
+   "Tier": "Elite",
+   "ItemCode": "7sc",
+   "Name": "Mighty Scepter"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Scepter",
+   "Tier": "Elite",
+   "ItemCode": "7qs",
+   "Name": "Seraph Rod"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Scepter",
+   "Tier": "Elite",
+   "ItemCode": "7ws",
+   "Name": "Caduceus"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Sorceress Orb",
+   "Tier": "Normal",
+   "ItemCode": "ob1",
+   "Name": "Eagle Orb"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Sorceress Orb",
+   "Tier": "Normal",
+   "ItemCode": "ob2",
+   "Name": "Sacred Globe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Sorceress Orb",
+   "Tier": "Normal",
+   "ItemCode": "ob3",
+   "Name": "Smoked Sphere"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Sorceress Orb",
+   "Tier": "Normal",
+   "ItemCode": "ob4",
+   "Name": "Clasped Orb"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Sorceress Orb",
+   "Tier": "Normal",
+   "ItemCode": "ob5",
+   "Name": "Jared's Stone"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Sorceress Orb",
+   "Tier": "Exceptional",
+   "ItemCode": "ob6",
+   "Name": "Glowing Orb"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Sorceress Orb",
+   "Tier": "Exceptional",
+   "ItemCode": "ob7",
+   "Name": "Crystalline Globe"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Sorceress Orb",
+   "Tier": "Exceptional",
+   "ItemCode": "ob8",
+   "Name": "Cloudy Sphere"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Sorceress Orb",
+   "Tier": "Exceptional",
+   "ItemCode": "ob9",
+   "Name": "Sparkling Ball"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Sorceress Orb",
+   "Tier": "Exceptional",
+   "ItemCode": "oba",
+   "Name": "Swirling Crystal"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Sorceress Orb",
+   "Tier": "Elite",
+   "ItemCode": "obb",
+   "Name": "Heavenly Stone"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Sorceress Orb",
+   "Tier": "Elite",
+   "ItemCode": "obc",
+   "Name": "Eldritch Orb"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Sorceress Orb",
+   "Tier": "Elite",
+   "ItemCode": "obd",
+   "Name": "Demon Heart"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Sorceress Orb",
+   "Tier": "Elite",
+   "ItemCode": "obe",
+   "Name": "Vortex Orb"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Sorceress Orb",
+   "Tier": "Elite",
+   "ItemCode": "obf",
+   "Name": "Dimensional Shard"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Amazon Bow",
+   "Tier": "Normal",
+   "ItemCode": "am1",
+   "Name": "Stag Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Amazon Bow",
+   "Tier": "Normal",
+   "ItemCode": "am2",
+   "Name": "Reflex Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Amazon Spear",
+   "Tier": "Normal",
+   "ItemCode": "am3",
+   "Name": "Maiden Spear"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Amazon Spear",
+   "Tier": "Normal",
+   "ItemCode": "am4",
+   "Name": "Maiden Pike"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Amazon Javelins",
+   "Tier": "Normal",
+   "ItemCode": "am5",
+   "Name": "Maiden Javelin"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Amazon Bow",
+   "Tier": "Exceptional",
+   "ItemCode": "am6",
+   "Name": "Ashwood Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Amazon Bow",
+   "Tier": "Exceptional",
+   "ItemCode": "am7",
+   "Name": "Ceremonial Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Amazon Spear",
+   "Tier": "Exceptional",
+   "ItemCode": "am8",
+   "Name": "Ceremonial Spear"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Amazon Spear",
+   "Tier": "Exceptional",
+   "ItemCode": "am9",
+   "Name": "Ceremonial Pike"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Amazon Javelins",
+   "Tier": "Exceptional",
+   "ItemCode": "ama",
+   "Name": "Ceremonial Javelin"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Amazon Bow",
+   "Tier": "Elite",
+   "ItemCode": "amb",
+   "Name": "Matriarchal Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Amazon Bow",
+   "Tier": "Elite",
+   "ItemCode": "amc",
+   "Name": "Grand Matron Bow"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Amazon Spear",
+   "Tier": "Elite",
+   "ItemCode": "amd",
+   "Name": "Matriarchal Spear"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Amazon Spear",
+   "Tier": "Elite",
+   "ItemCode": "ame",
+   "Name": "Matriarchal Pike"
+ },
+ {
+   "Category": "Weapon",
+   "SubCategory": "Amazon Javelins",
+   "Tier": "Elite",
+   "ItemCode": "amf",
+   "Name": "Matriarchal Javelin"
+ },
+ {
+   "Category": "Offhand",
+   "SubCategory": "Quiver",
+   "Tier": "Normal",
+   "ItemCode": "aqv",
+   "Name": "Arrows"
+ },
+ {
+   "Category": "Offhand",
+   "SubCategory": "Quiver",
+   "Tier": "Normal",
+   "ItemCode": "cqv",
+   "Name": "Bolts"
+ },
+ {
+   "Category": "Jewellery",
+   "SubCategory": "Ring",
+   "Tier": "Normal",
+   "ItemCode": "rin",
+   "Name": "Ring"
+ },
+ {
+   "Category": "Jewellery",
+   "SubCategory": "Amulet",
+   "Tier": "Normal",
+   "ItemCode": "amu",
+   "Name": "Amulet"
+ },
+ {
+   "Category": "Jewellery",
+   "SubCategory": "Jewel",
+   "Tier": "Normal",
+   "ItemCode": "jew",
+   "Name": "Jewel"
+ }
+]
