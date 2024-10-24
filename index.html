@@ -404,7 +404,43 @@
             <div class="collapsible-box collapsed">
                 <h2>Skill Selection</h2>
                 <div class="collapsible-content">
-                    <p>Select skills to filter by.</p>
+                    <div class="skills-container">
+                    
+                        <!-- Dropdown for Skill Category -->
+                        <label for="skill-category">Select Skill Category:</label>
+                        <select id="skill-category">
+                            <option value="">-- Choose Category --</option>
+                        </select>
+                    
+                        <!-- Dropdown for Skill Name -->
+                        <label for="skill-name">Select Skill:</label>
+                        <select id="skill-name" disabled>
+                            <option value="">-- Choose Skill --</option>
+                        </select>
+                    
+                        <!-- Comparison Operators -->
+                        <fieldset>
+                            <legend>Select Comparison</legend>
+                            <label><input type="radio" name="comparison" value=">" checked> > </label>
+                            <label><input type="radio" name="comparison" value="="> = </label>
+                            <label><input type="radio" name="comparison" value="<"> < </label>
+                    
+                            <!-- AND/OR Radio -->
+                            <div>
+                                <label><input type="radio" name="and-or" value="AND" checked> AND </label>
+                                <label><input type="radio" name="and-or" value="OR"> OR </label>
+                            </div>
+                        </fieldset>
+                    
+                        <!-- Text box for the skill level -->
+                        <label for="skill-level">Skill Level (1-3):</label>
+                        <input type="number" id="skill-level" name="skill-level" min="1" max="3" value="1">
+                    
+                        <!-- Add Skill Button -->
+                        <button id="add-skill" disabled>Add Skill</button>
+                    
+
+                    </div>
                 </div>
             </div>
 
@@ -426,8 +462,16 @@
         <!-- Right Column (1 thin vertical box) -->
         <div class="right-column">
             <h2>Current Settings</h2>
+        
+            <!-- Section for displaying selected items -->
             <div id="selected-items" class="selected-items">
                 <!-- Selected items will be added here -->
+            </div>
+        
+            <!-- Section for displaying selected skills -->
+            <div id="selected-skills" class="selected-skills">
+                <h3>Selected Skills:</h3>
+                <!-- Selected skills will be added here -->
             </div>
         </div>
 
@@ -625,7 +669,7 @@
             itemName.textContent = item.Name;  // Display item name
 
             const removeButton = document.createElement('span');
-            removeButton.textContent = 'X';
+            removeButton.textContent = ' X';
             removeButton.className = 'remove-item';
             removeButton.onclick = () => {
                 removeSelectedItem(index);
@@ -636,8 +680,8 @@
             selectedItemsDiv.appendChild(itemDiv);
         });
 
-        updateGeneratedRule();  // Update the rule when the items are displayed
-    }
+    updateGeneratedRule();  // Update the rule when the items are displayed
+}
 
     // Function to remove an item from the list
     function removeSelectedItem(index) {
@@ -648,69 +692,80 @@
     // Function to update the generated rule
     function updateGeneratedRule() {
     const ruleBox = document.getElementById('generated-rule');
-
-    // If no rarities or items are selected, display a default message
-    if (selectedRarities.length === 0 && selectedItems.length === 0) {
-        ruleBox.value = "No rules generated yet.";  
-        return;
-    }
-
     let rule = "ItemDisplay[";
 
-    // Add rarities to the rule if selected
+    // Add rarities if selected
     if (selectedRarities.length > 1) {
         rule += "(" + selectedRarities.join(" OR ") + ")";
     } else if (selectedRarities.length === 1) {
-        rule += selectedRarities[0];  // No brackets if only one rarity
+        rule += selectedRarities[0];
     }
 
-    // Add a space between rarity and item section if both exist
-    if (selectedRarities.length > 0 && selectedItems.length > 0) {
-        rule += " ";  // Add space between rarity and items
+    // Add basics if selected
+    if (selectedBasics.length > 0) {
+        if (selectedRarities.length > 0) rule += " ";  // Add space between rarity and basics
+        rule += selectedBasics.join(" ");
     }
 
-    // Add item codes to the rule if selected
+    // Add item codes (assuming item selection is already working)
     if (selectedItems.length > 1) {
-        rule += "(" + selectedItems.map(item => item.ItemCode).join(" OR ") + ")";
+        rule += " (" + selectedItems.map(item => item.ItemCode).join(" OR ") + ")";
     } else if (selectedItems.length === 1) {
-        rule += selectedItems[0].ItemCode;  // No brackets if only one item
+        rule += " " + selectedItems[0].ItemCode;
+    }
+
+    // Add selected skills to the rule
+    if (selectedSkills.length > 0) {
+        if (rule !== "ItemDisplay[") rule += " ";  // Add space if there's something before skills
+
+        // Fetch the selected logic (AND/OR) using the correct radio button name
+        const selectedLogic = document.querySelector('input[name="and-or"]:checked').value;
+
+        // Apply AND/OR logic between multiple skills
+        if (selectedSkills.length > 1) {
+            rule += "(" + selectedSkills.map(skill => `${skill.code}${skill.comparison}${skill.level}`).join(` ${selectedLogic} `) + ")";
+        } else {
+            rule += selectedSkills[0].code + selectedSkills[0].comparison + selectedSkills[0].level;
+        }
     }
 
     rule += "]:";
-    
-    ruleBox.value = rule;  // Update the textarea with the generated rule
+
+    // Update the rule box with the generated rule
+    ruleBox.value = rule;
 }
 
 
 </script>
 <script>
-    // Arrays to store selected rarities and basics
+    // Arrays to store selected rarities, basics, and skills
     let selectedRarities = [];
     let selectedBasics = [];
-    
+  // Assuming this is already handled
+
     // Fetch rarity data from rarity.json located in the "data" folder
     fetch('data/rarity.json')
         .then(response => response.json())
         .then(raritiesData => {
             const raritySelectionDiv = document.getElementById('rarity-selection');
-    
+
             // Loop through the JSON data and create checkboxes for each rarity
             raritiesData.forEach(rarity => {
                 const rarityDiv = document.createElement('div');
                 rarityDiv.classList.add('rarity-entry');  // To align rarity checkboxes and label neatly
-    
+
                 // TRUE checkbox for the rarity
                 const trueCheckbox = document.createElement('input');
                 trueCheckbox.type = 'checkbox';
                 trueCheckbox.name = 'rarity-true';
                 trueCheckbox.value = rarity.CODE;
-    
+
                 // FALSE checkbox for the rarity
                 const falseCheckbox = document.createElement('input');
                 falseCheckbox.type = 'checkbox';
                 falseCheckbox.name = 'rarity-false';
                 falseCheckbox.value = "!" + rarity.CODE;  // Prefix the CODE with '!' for exclusion
-    
+
                 // Ensure only one checkbox (TRUE or FALSE) is checked at a time
                 trueCheckbox.addEventListener('change', function() {
                     if (this.checked) {
@@ -720,7 +775,7 @@
                         removeRarity(this.value);
                     }
                 });
-    
+
                 falseCheckbox.addEventListener('change', function() {
                     if (this.checked) {
                         trueCheckbox.checked = false;  // Uncheck TRUE checkbox
@@ -729,16 +784,16 @@
                         removeRarity(this.value);
                     }
                 });
-    
+
                 // Create the label for the rarity
                 const label = document.createElement('label');
                 label.textContent = rarity["Rarity:"];  // Display the rarity name using bracket notation
-    
+
                 // Add the checkboxes and label to the rarity div
                 rarityDiv.appendChild(trueCheckbox);
                 rarityDiv.appendChild(falseCheckbox);
                 rarityDiv.appendChild(label);
-    
+
                 // Append the entire rarity div to the rarity-selection area
                 raritySelectionDiv.appendChild(rarityDiv);
             });
@@ -746,7 +801,7 @@
         .catch(error => {
             console.error("Error loading rarity data:", error);
         });
-    
+
     // Function to add a rarity to the selectedRarities array
     function addRarity(rarityCode) {
         if (!selectedRarities.includes(rarityCode)) {
@@ -754,7 +809,7 @@
             updateGeneratedRule();
         }
     }
-    
+
     // Function to remove a rarity from the selectedRarities array
     function removeRarity(rarityCode) {
         const index = selectedRarities.indexOf(rarityCode);
@@ -763,38 +818,132 @@
             updateGeneratedRule();
         }
     }
-    
-    // Function to generate the rule based on the selected rarities, basics, and items
+
+    // Skill selection handling
+    function addSkill() {
+        const skillDropdown = document.getElementById('skill-name');
+        const selectedSkillCode = skillDropdown.value;
+        const selectedSkillName = skillDropdown.options[skillDropdown.selectedIndex].text;
+        const comparison = document.querySelector('input[name="comparison"]:checked').value;
+        const skillValue = document.getElementById('skill-level').value;
+
+        // Fetch the selected AND/OR logic
+        const selectedLogic = document.querySelector('input[name="and-or"]:checked').value;
+
+        // Check if a skill is selected, comparison is selected, and skill level is valid
+        if (selectedSkillCode && comparison && skillValue && !isNaN(skillValue)) {
+            const existingSkill = selectedSkills.find(skill => skill.code === selectedSkillCode);
+
+            if (!existingSkill) {
+                // Add skill to the selectedSkills array
+                selectedSkills.push({
+                    code: selectedSkillCode,
+                    name: selectedSkillName,
+                    comparison: comparison,
+                    level: skillValue,
+                    logic: selectedLogic  // Ensure logic is added correctly
+                });
+
+                // Display the selected skills
+                displaySelectedSkills();
+
+                // Update the rule
+                updateGeneratedRule();
+            } else {
+                alert("Skill already selected.");
+            }
+        } else {
+            alert("Please select a valid skill, comparison operator, and skill level.");
+        }
+    }
+
+
+
+
+// Function to display selected skills in the right column
+    function displaySelectedSkills() {
+        const selectedSkillsDiv = document.getElementById('selected-skills');
+        selectedSkillsDiv.innerHTML = '';  // Clear current display
+
+        if (selectedSkills.length > 0) {
+            const title = document.createElement('h3');
+            title.textContent = "Selected Skills:";
+            selectedSkillsDiv.appendChild(title);
+        }
+
+        selectedSkills.forEach((skill, index) => {
+            const skillDiv = document.createElement('div');
+            skillDiv.className = 'selected-skill';
+
+            const skillInfo = document.createElement('span');
+            skillInfo.textContent = `${skill.name} ${skill.comparison} ${skill.level}`;  // Display skill info
+
+            const removeButton = document.createElement('span');
+            removeButton.textContent = ' X';
+            removeButton.className = 'remove-skill';
+            removeButton.onclick = () => {
+                removeSkill(index);
+            };
+
+            skillDiv.appendChild(skillInfo);
+            skillDiv.appendChild(removeButton);
+            selectedSkillsDiv.appendChild(skillDiv);
+        });
+    }
+
+// Function to remove a skill from the selectedSkills array
+    function removeSkill(index) {
+        selectedSkills.splice(index, 1);  // Remove the skill from the array
+        displaySelectedSkills();  // Update displayed skills after removal
+        updateGeneratedRule();  // Update the rule after skill removal
+    }
+
+    // Function to generate the rule based on the selected rarities, basics, items, and skills
     function updateGeneratedRule() {
         const ruleBox = document.getElementById('generated-rule');
         let rule = "ItemDisplay[";
-    
+
         // Add rarities if selected
         if (selectedRarities.length > 1) {
             rule += "(" + selectedRarities.join(" OR ") + ")";
         } else if (selectedRarities.length === 1) {
             rule += selectedRarities[0];
         }
-    
+
         // Add basics if selected
         if (selectedBasics.length > 0) {
             if (selectedRarities.length > 0) rule += " ";  // Add space between rarity and basics
             rule += selectedBasics.join(" ");
         }
-    
-        // Add item codes (assuming item selection is already working)
+
+        // Add item codes
         if (selectedItems.length > 1) {
             rule += " (" + selectedItems.map(item => item.ItemCode).join(" OR ") + ")";
         } else if (selectedItems.length === 1) {
             rule += " " + selectedItems[0].ItemCode;
         }
-    
+
+        // Add selected skills to the rule
+        if (selectedSkills.length > 0) {
+            if (rule !== "ItemDisplay[") rule += " ";  // Add space if there's something before skills
+
+            // Apply AND/OR logic between multiple skills
+            if (selectedSkills.length > 1) {
+                rule += "(" + selectedSkills.map(skill => `${skill.code}${skill.comparison}${skill.level}`).join(` ${selectedLogic} `) + ")";
+            } else {
+                rule += `${selectedSkills[0].code}${selectedSkills[0].comparison}${selectedSkills[0].level}`;
+            }
+        }
+
         rule += "]:";
-        
+
         // Update the rule box with the generated rule
         ruleBox.value = rule;
     }
-    
+
+
+
+
     // Assume there's a function to handle basics checkboxes similar to rarities
     function addBasic(basicCode) {
         if (!selectedBasics.includes(basicCode)) {
@@ -802,7 +951,7 @@
             updateGeneratedRule();  // Update the rule after basics are selected
         }
     }
-    
+
     function removeBasic(basicCode) {
         const index = selectedBasics.indexOf(basicCode);
         if (index > -1) {
@@ -810,8 +959,21 @@
             updateGeneratedRule();  // Update the rule after basics are deselected
         }
     }
-    
-    </script>
+
+    // Example for adding skills
+    document.getElementById('add-skill').addEventListener('click', function() {
+        const skillCode = document.getElementById('skill-name').value;
+        const comparison = document.querySelector('input[name="comparison"]:checked').value;
+        const level = document.getElementById('skill-level').value;
+        const logic = document.querySelector('input[name="and-or"]:checked').value;
+
+        // Add the selected skill to the selectedSkills array
+        addSkill(skillCode, comparison, level, logic);
+    });
+
+</script>
+
+
     
 <script>
     const basics = [
@@ -870,7 +1032,120 @@ basics.forEach(basic => {
 });
 
 </script>
+<script>
+// Array to store selected skills
+let selectedSkills = [];
+let selectedLogic = "OR";  // Default to AND
 
+// Event listener to detect changes to the AND/OR radio buttons
+document.querySelectorAll('input[name="and-or"]').forEach(radio => {
+    radio.addEventListener('change', function() {
+        selectedLogic = this.value;  // Update logic when radio button changes
+        updateGeneratedRule();  // Update the rule dynamically
+    });
+});
+
+// Fetch skills data from skills.json
+fetch('data/skills.json')
+    .then(response => response.json())
+    .then(skillsData => {
+        // Extract unique categories from the skills data
+        const skillCategories = [...new Set(skillsData.map(skill => skill.Category))];
+        const categorySelect = document.getElementById('skill-category');
+        const nameSelect = document.getElementById('skill-name');
+        const addSkillButton = document.getElementById('add-skill');
+        const selectedSkillsDiv = document.getElementById('selected-skills');
+
+        // Populate the skill category dropdown
+        skillCategories.forEach(category => {
+            const option = document.createElement('option');
+            option.value = category;
+            option.textContent = category;
+            categorySelect.appendChild(option);
+        });
+
+        // Event listener for when a category is selected
+        categorySelect.addEventListener('change', function() {
+            const selectedCategory = this.value;
+
+            // Reset the skill name dropdown
+            nameSelect.innerHTML = '<option value="">-- Choose Skill --</option>';
+            nameSelect.disabled = false; // Enable the dropdown when category is selected
+
+            // Populate the skill names based on the selected category
+            const filteredSkills = skillsData.filter(skill => skill.Category === selectedCategory);
+            filteredSkills.forEach(skill => {
+                const option = document.createElement('option');
+                option.value = skill.CODE;
+                option.textContent = skill.Name;
+                nameSelect.appendChild(option);
+            });
+        });
+
+        // Event listener for when a skill name is selected
+        nameSelect.addEventListener('change', function() {
+            const selectedSkill = this.value;
+            addSkillButton.disabled = !selectedSkill; // Enable Add button if a skill is selected
+        });
+
+        // Event listener for Add Skill button
+        addSkillButton.addEventListener('click', function() {
+            const selectedSkillCode = nameSelect.value;
+            const selectedSkillName = nameSelect.options[nameSelect.selectedIndex].text;
+            const comparisonOperator = document.querySelector('input[name="comparison"]:checked').value;
+            const skillLevel = document.getElementById('skill-level').value;
+
+            // Add skill only if it's not already added
+            if (selectedSkillCode && !selectedSkills.some(skill => skill.code === selectedSkillCode)) {
+                selectedSkills.push({ code: selectedSkillCode, name: selectedSkillName, comparison: comparisonOperator, level: skillLevel });
+                displaySelectedSkills();
+            }
+        });
+
+        // Function to display selected skills
+        function displaySelectedSkills() {
+            const selectedSkillsDiv = document.getElementById('selected-skills');
+            selectedSkillsDiv.innerHTML = '';  // Clear current display
+
+            if (selectedSkills.length > 0) {
+                const title = document.createElement('h3');
+                title.textContent = "Selected Skills:";
+                selectedSkillsDiv.appendChild(title);
+            }
+
+            selectedSkills.forEach((skill, index) => {
+                const skillDiv = document.createElement('div');
+                skillDiv.className = 'selected-skill';
+
+                const skillInfo = document.createElement('span');
+                skillInfo.textContent = `${skill.code} ${skill.comparison} ${skill.level}`;  // Display skill info
+
+                const removeButton = document.createElement('span');
+                removeButton.textContent = ' X';
+                removeButton.className = 'remove-skill';
+                removeButton.onclick = () => {
+                    removeSkill(skill.code);
+                };
+
+                skillDiv.appendChild(skillInfo);
+                skillDiv.appendChild(removeButton);
+                selectedSkillsDiv.appendChild(skillDiv);
+            });
+
+            updateGeneratedRule();  // Update the rule when the skills are displayed
+        }
+
+        // Function to remove a skill from the selected skills list
+        function removeSkill(skillCode) {
+            selectedSkills = selectedSkills.filter(skill => skill.code !== skillCode);
+            displaySelectedSkills();
+        }
+    })
+    .catch(error => {
+        console.error("Error loading skills data:", error);
+    });
+
+</script>
 
 
 </body>
