@@ -458,11 +458,6 @@ basics.forEach(basic => {
         updateSelectedBasics(); // Update basics selection
     });
 
-    const labelTrue = document.createElement('label');
-    labelTrue.textContent = ` ${basic.label} (True)`;
-    
-    const labelFalse = document.createElement('label');
-    labelFalse.textContent = ` ${basic.label} (False)`;
 
     basicsDiv.appendChild(trueCheckbox);
     basicsDiv.appendChild(labelTrue);
