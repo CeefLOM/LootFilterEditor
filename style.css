@@ -1,0 +1,143 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.mod-selection {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mod-dropdown,
+.argument-tags,
+.comparison-operators,
+.operator-selection {
+    margin-bottom: 10px;
+}
+
+.operator-selection {
+    display: none;
+}
+
+.selected-mods {
+    margin-top: 20px;
+}
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.75fr;
+    grid-gap: 10px;
+    min-height: 500px;
+}
+
+h1 {
+    grid-column: span 3;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+#sockets-section,
+#tiers-section {
+    margin-top: 10px;
+}
+
+.tier-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.tier-entry label {
+    margin-left: 5px;
+}
+
+.grid-header {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.rarity-basics-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.basics-container,
+.rarity-container {
+    width: 48%;
+}
+
+.true-header,
+.false-header {
+    width: 20px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.sockets-section {
+    margin-bottom: 15px;
+}
+
+.sockets-section label {
+    margin-right: 10px;
+}
+
+.collapsible-box {
+    border: 1px solid #ccc;
+    padding: 0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+}
+
+.collapsible-box h2 {
+    font-size: 12px;
+    margin: 0;
+    cursor: pointer;
+    background-color: #2980b9;
+    color: white;
+    padding: 6px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.collapsible-box h2:hover {
+    background-color: #1f6395;
+}
+
+.collapsible-content {
+    padding: 10px;
+    display: none;
+}
+
+.collapsible-box.active .collapsible-content {
+    display: block;
+}
+
+.rule-box {
+    grid-column: 1 / -1;
+    margin-top: 20px;
+    border: 1px solid #2980b9;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    color: #2980b9;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+}

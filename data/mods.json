@@ -1,0 +1,157 @@
+[
+    {
+        "Code": "SOCKETS",
+        "Name": "Total Sockets",
+        "Description": "Socketed (N)"
+    },
+    {
+        "Code": "DEF",
+        "Name": "Total Defense",
+        "Description": "Defense: N"
+    },
+    {
+        "Code": "ED",
+        "Name": "Enhanced Defense/Damage",
+        "Description": "+N% Enhanced Defense, +N% Enhanced Damage (refers to defense for armor, damage for weapons)"
+    },
+    {
+        "Code": "EDEF",
+        "Name": "Enhanced Defense",
+        "Description": "+N% Enhanced Defense"
+    },
+    {
+        "Code": "EDAM",
+        "Name": "Enhanced Damage",
+        "Description": "+N% Enhanced Damage"
+    },
+    {
+        "Code": "MAXDUR",
+        "Name": "Max Durability",
+        "Description": "Increase Maximum Durability N%"
+    },
+    {
+        "Code": "AR",
+        "Name": "Attack Rating",
+        "Description": "+N to Attack Rating"
+    },
+    {
+        "Code": "RES",
+        "Name": "All Resistances",
+        "Description": "All Resistances +N"
+    },
+    {
+        "Code": "FRES",
+        "Name": "Fire Resist",
+        "Description": "Fire Resist +N%"
+    },
+    {
+        "Code": "CRES",
+        "Name": "Cold Resist",
+        "Description": "Cold Resist +N%"
+    },
+    {
+        "Code": "LRES",
+        "Name": "Lightning Resist",
+        "Description": "Lightning Resist +N%"
+    },
+    {
+        "Code": "PRES",
+        "Name": "Poison Resist",
+        "Description": "Poison Resist +N%"
+    },
+    {
+        "Code": "FRW",
+        "Name": "Faster Run/Walk",
+        "Description": "+N% Faster Run/Walk"
+    },
+    {
+        "Code": "IAS",
+        "Name": "Increased Attack Speed",
+        "Description": "+N% Increased Attack Speed"
+    },
+    {
+        "Code": "FCR",
+        "Name": "Faster Cast Rate",
+        "Description": "+N% Faster Cast Rate"
+    },
+    {
+        "Code": "FHR",
+        "Name": "Faster Hit Recovery",
+        "Description": "+N% Faster Hit Recovery"
+    },
+    {
+        "Code": "FBR",
+        "Name": "Faster Block Rate",
+        "Description": "+N% Faster Block Rate"
+    },
+    {
+        "Code": "MINDMG",
+        "Name": "Minimum Damage",
+        "Description": "+N to Minimum Damage"
+    },
+    {
+        "Code": "MAXDMG",
+        "Name": "Maximum Damage",
+        "Description": "+N to Maximum Damage"
+    },
+    {
+        "Code": "STR",
+        "Name": "Strength",
+        "Description": "+N to Strength"
+    },
+    {
+        "Code": "DEX",
+        "Name": "Dexterity",
+        "Description": "+N to Dexterity"
+    },
+    {
+        "Code": "LIFE",
+        "Name": "Max HP",
+        "Description": "+N to Life"
+    },
+    {
+        "Code": "MANA",
+        "Name": "Max Mana",
+        "Description": "+N to Mana"
+    },
+    {
+        "Code": "MFIND",
+        "Name": "Magic Find",
+        "Description": "N% Better Chance of Getting Magic Items"
+    },
+    {
+        "Code": "GFIND",
+        "Name": "Gold Find",
+        "Description": "N% Extra Gold from Monsters"
+    },
+    {
+        "Code": "MAEK",
+        "Name": "Mana Per Kill",
+        "Description": "+N to Mana after each Kill"
+    },
+    {
+        "Code": "DTM",
+        "Name": "Damage to Mana",
+        "Description": "N% Damage Taken Gained as Mana when Hit"
+    },
+    {
+        "Code": "REPLIFE",
+        "Name": "Life Replenish",
+        "Description": "Replenish Life +N"
+    },
+    {
+        "Code": "REPAIR",
+        "Name": "Auto-Repair",
+        "Description": "Repairs X Durability in Y Seconds (N = 100 / Y)"
+    },
+    {
+        "Code": "ARPER",
+        "Name": "Attack Rating Bonus",
+        "Description": "N% Bonus to Attack Rating"
+    },
+    {
+        "Code": "FOOLS",
+        "Name": "Fool's Mod",
+        "Description": "+X to Attack Rating (Based on Character Level), +Y to Maximum Damage (Based on Character Level)"
+    }
+]
